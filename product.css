@@ -1,3 +1,13 @@
+*{
+    
+    font-family: 'Montserrat', sans-serif;
+        font-size : 14px;
+        font-weight: 600;
+    
+}
+#sorting{
+    border: none;
+}
 #product-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -5,9 +15,11 @@
 }
 
 #prodiv{
+    padding: 10px;
     width: 310px;
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0 12px 0 12px;
 }
 #prodivtop{
     width: 310px;
@@ -49,7 +61,7 @@
     display: flex;
     justify-content: space-between;
 }
-#prodivbottom1 img{
+#vegimg{
     width: 8%;
     height: 8%;
 }
@@ -59,11 +71,28 @@
 }
 #prodivbottom3{
     display: flex;
+    gap: 10px;
 }
-#prodivbottom3 h3{
-    padding:  0 5px;
+#discount{
+    font-size: 12px;
+    font-weight: 500;
+    color:green;
 }
-#prodivbottom3 h3+h4{
-    padding:  0 5px;
-    color: grey;
+#price{
+    font-size: 16px;
+    font-weight: 600;
+}
+#strprice{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+#prodivbottom4{
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+   justify-content: center;
+}
+#prodivbottom4 img{
+   padding: 5px;
 }

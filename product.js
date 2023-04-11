@@ -97,7 +97,7 @@ function productObj(
   );
   let g = new productObj(
     17,
-    "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
+    "https://img1.hkrtcdn.com/26624/prd_2662310-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
     "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
     "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
     "Ultimate Nutrition Prostar 100% Whey Protein, 5.28 lb, Chocolate Creme",
@@ -456,13 +456,34 @@ function productObj(
         let prodivbottom3= document.createElement("div");
         prodivbottom3.id="prodivbottom3";
 
-        let price= document.createElement("h3");
+        let price= document.createElement("p");
         price.textContent=products.price;
+        price.id="price";
 
-        let strprice= document.createElement("h4");
+
+        let strprice= document.createElement("p");
+        strprice.id="strprice";
+
         strprice.textContent=products.strPrice;
 
-        prodivbottom3.append(price, strprice);
+        let discount= document.createElement("p");
+        discount.id="discount";
+        discount.textContent=products.discount+"% off";
+
+        prodivbottom3.append(price, strprice, discount);
+
+        //PMP div
+
+        let prodivbottom4=document.createElement("div");
+        prodivbottom4.id="prodivbottom4";
+
+        let pmpicon=document.createElement("img");
+        pmpicon.src="https://static1.hkrtcdn.com/hknext/static/media/common/premium_member.svg";
+
+        let pmptext=document.createElement("p");
+        pmptext.textContent=`₹${products.pmpPrice} for Premium Members`
+
+        prodivbottom4.append(pmpicon,pmptext);
 
         
 
@@ -472,7 +493,7 @@ function productObj(
         prodivbottom1.append(ratingreviewdiv, vegimg);
         prodivbottom2.append(prodName);
 
-        prodivbottom.append(prodivbottom1, prodivbottom2, prodivbottom3);
+        prodivbottom.append(prodivbottom1, prodivbottom2, prodivbottom3,prodivbottom4);
         prodiv.append(prodivtop,prodivbottom);
         document.getElementById("product-list").append(prodiv);
     })
