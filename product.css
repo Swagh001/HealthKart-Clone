@@ -1,0 +1,23 @@
+#product-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+#prodiv{
+    width: 310px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#prodivtop{
+    width: 310px;
+    height: 250px;
+    border: 1px solid grey;
+}
+#prodimg{
+    width: 70%;
+    display: block;
+    margin: auto;
+    /* height: 250px;
+    border: 1px solid grey; */
+}
