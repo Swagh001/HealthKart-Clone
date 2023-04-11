@@ -51,7 +51,7 @@ function productObj(
     "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
     "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
     "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
-    "ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate",
+    "ON  Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate",
     4.5,
     2669,
     6785,
@@ -485,6 +485,14 @@ function productObj(
 
         prodivbottom4.append(pmpicon,pmptext);
 
+        //Add to cart Button
+
+        let cartBtn= document.createElement("button");
+        cartBtn.id="cart-button";
+        cartBtn.textContent="Add to Cart"
+
+
+
         
 
         ratingdiv.append(ratingp, ratingimg);
@@ -493,7 +501,7 @@ function productObj(
         prodivbottom1.append(ratingreviewdiv, vegimg);
         prodivbottom2.append(prodName);
 
-        prodivbottom.append(prodivbottom1, prodivbottom2, prodivbottom3,prodivbottom4);
+        prodivbottom.append(prodivbottom1, prodivbottom2, prodivbottom3,prodivbottom4,cartBtn);
         prodiv.append(prodivtop,prodivbottom);
         document.getElementById("product-list").append(prodiv);
     })
