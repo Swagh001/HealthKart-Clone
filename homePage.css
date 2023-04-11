@@ -111,3 +111,22 @@ input{
 .carousel-indicators [data-bs-target]{
     transition: opacity 0.1s ease-in-out;
 }
+.carousel-indicators button{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+#price1221{
+    font-weight: 600;
+    font-size: 26px;
+    font-family: Montserrat,sans-serif;
+    margin-top: 22px;
+    margin-left: 82px;
+}
+#card1Img{
+    height: 27vh;
+    width: 13vw;
+    margin-left: 51px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
