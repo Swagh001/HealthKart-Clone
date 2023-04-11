@@ -29,7 +29,7 @@ function productObj(
     "https://img10.hkrtcdn.com/12090/prd_1208909-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
     "MuscleBlaze Biozyme Performance Whey, 4.4 lb, Rich Chocolate",
     4.5,
-    1571,
+    "2.8k",
     4399,
     6149,
     4267
@@ -41,7 +41,7 @@ function productObj(
     "https://img2.hkrtcdn.com/14146/prd_1414551-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
     "MB Fuel One Whey Protein Immunity+, 8.8 lb, Chocolate",
     4.4,
-    1129,
+    "2.6k",
     6899,
     10149,
     6692
@@ -392,17 +392,81 @@ function productObj(
         prodimg.id="prodimg";
         prodimg.src=products.image;
 
-          prodiv.append(prodivtop);
-          prodivtop.append(heartdiv,prodimg)
+        prodivtop.append(heartdiv,prodimg)
         heartdiv.append(heartimg);
+        
+       
+
+
+        //BOTTOM DIV-- Product Div
+
+        let prodivbottom= document.createElement("div");
+        prodivbottom.id="prodivbottom";
+
+
+        //Rating div
+        let prodivbottom1= document.createElement("div");
+        prodivbottom1.id="prodivbottom1";
+
+
+        let ratingreviewdiv= document.createElement("div");
+        ratingreviewdiv.id="ratingreviewdiv";
+
+        let ratingdiv= document.createElement("div");
+        ratingdiv.id="ratingdiv";
+
+        let ratingp= document.createElement("p");
+        ratingp.textContent=products.rating;
+        
+
+        let ratingimg= document.createElement("img");
+        ratingimg.src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/small_star_empty.svg";
+
+        //Review div
+
+        let reviewp= document.createElement("p");
+        reviewp.textContent=`${products.ratingQ} reviews`;
+
+
+
+        
+
+
+        //veg image
+
+         let vegimg=document.createElement("img");
+        vegimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1yUU0RvY44r9bS4_A8McYfu6Igno-loyWA&usqp=CAU";
+        vegimg.id="vegimg";
+
+
+
+        
+
+        //bottomdiv2
+
+        let prodivbottom2= document.createElement("div");
+        prodivbottom2.id="prodivbottom2";
+
+        let prodName=document.createElement("p");
+        prodName.textContent=products.title;
+        console.log(products.title);
+
+        //bottomdiv3(price div)
+
+    
+
+
+        
+
+        ratingdiv.append(ratingp, ratingimg);
+        ratingreviewdiv.append(ratingdiv, reviewp);
+
+        prodivbottom1.append(ratingreviewdiv, vegimg);
+        prodivbottom2.append(prodName);
+
+        prodivbottom.append(prodivbottom1, prodivbottom2);
+        prodiv.append(prodivtop,prodivbottom);
         document.getElementById("product-list").append(prodiv);
-        
-        // let vegimg=document.createElement("img");
-        // vegimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1yUU0RvY44r9bS4_A8McYfu6Igno-loyWA&usqp=CAU";
-        // vegimg.id="vegimg";
-
-        
-
     })
 
   }

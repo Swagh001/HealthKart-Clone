@@ -12,7 +12,8 @@
 #prodivtop{
     width: 310px;
     height: 250px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    /* background-color: grey; */
 }
 #prodimg{
     width: 70%;
@@ -20,4 +21,39 @@
     margin: auto;
     /* height: 250px;
     border: 1px solid grey; */
+}
+#ratingreviewdiv{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+#ratingdiv{
+    justify-content: space-between;
+    display: flex;
+    width: 42px;
+    height: 22px;
+    background-color: 
+    #00b5b7;
+    margin: 5px;
+    border-radius: 2px;
+}
+#ratingdiv img{
+    width: 30%;
+}
+#ratingdiv p{
+    color: white;
+    margin-top: 3px;
+    font-size: 16px;
+}
+#prodivbottom1{
+    display: flex;
+    justify-content: space-between;
+}
+#prodivbottom1 img{
+    width: 8%;
+    height: 8%;
+}
+
+#prodivbottom2 p{
+    line-height: 25px;
 }
