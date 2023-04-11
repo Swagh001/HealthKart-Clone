@@ -453,8 +453,16 @@ function productObj(
 
         //bottomdiv3(price div)
 
-    
+        let prodivbottom3= document.createElement("div");
+        prodivbottom3.id="prodivbottom3";
 
+        let price= document.createElement("h3");
+        price.textContent=products.price;
+
+        let strprice= document.createElement("h4");
+        strprice.textContent=products.strPrice;
+
+        prodivbottom3.append(price, strprice);
 
         
 
@@ -464,7 +472,7 @@ function productObj(
         prodivbottom1.append(ratingreviewdiv, vegimg);
         prodivbottom2.append(prodName);
 
-        prodivbottom.append(prodivbottom1, prodivbottom2);
+        prodivbottom.append(prodivbottom1, prodivbottom2, prodivbottom3);
         prodiv.append(prodivtop,prodivbottom);
         document.getElementById("product-list").append(prodiv);
     })

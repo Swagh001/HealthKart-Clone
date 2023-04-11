@@ -6,7 +6,7 @@
 
 #prodiv{
     width: 310px;
-    height: 400px;
+    height: 500px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #prodivtop{
@@ -56,4 +56,14 @@
 
 #prodivbottom2 p{
     line-height: 25px;
+}
+#prodivbottom3{
+    display: flex;
+}
+#prodivbottom3 h3{
+    padding:  0 5px;
+}
+#prodivbottom3 h3+h4{
+    padding:  0 5px;
+    color: grey;
 }
