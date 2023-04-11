@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#imgStyle121{
+    margin-left: 78px;
+    width: 15vw;
+}
+input{
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #77777e;
+    letter-spacing: .45px;
+    padding: 10px 45px;
+    height: 48px;
+    width: 610px;
+    caret-color: #33c4c5;
+}
+#iconSearch{
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 13px;
+    color: #b8b8bc;
+}
+#btn121{
+    background: #00b5b7;
+    width: 8vw;
+    margin-top: 23px;
+    height: 43px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 35px;
+    padding: 0px;
+}
+#cartIcon{
+    width: 26px;
+    margin-left: 61px;
+    height: 40px;
+    margin-top: 26px;
+    position: absolute;
+    cursor: pointer;
+}
+.row{
+    height: 72px;
+}
+#buttonMenu121{
+    width: 15vw;
+    margin-left: -156px;
+    height: 38px;
+    border: 1px solid #dbdee9;
+    border-radius: 1px;
+    outline: none;
+    font-weight: 600;
+    color: #77777e;
+    font-family:Montserrat,sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    background-color: #ffffff;
+}
+#bestSell121{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 33px;
+    letter-spacing: 0.45px;
+    font-family:Montserrat,sans-serif;
+    font-weight: 600;
+}
+#corrSpace121{
+    margin-left: -97px;
+    cursor: pointer;
+}
