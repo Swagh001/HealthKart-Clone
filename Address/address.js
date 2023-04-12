@@ -1,3 +1,8 @@
+import nav_bar from "./compo/New_navbar.js";
+
+let nevbardiv=document.getElementById("Navbar-AddressPage");
+nevbardiv.innerHTML=nav_bar();
+
 
 document.querySelector("form").addEventListener("submit",submit);
 let AddressArr= JSON.parse(localStorage.getItem("AddressData")) || [];
@@ -11,7 +16,7 @@ function submit(){
 
     console.log("hello"+name);
 
-    addressObj={
+    let addressObj={
         name:name,
         mobile:mobile,
         address:address,
@@ -72,3 +77,17 @@ function addressSelect3(){
     new_div.append(new_input);
     document.getElementById("newInut-1").append(new_div)
 }
+
+let mrp = document.getElementById("mrp");
+let discounts= document.getElementById("discounts");
+let final_Payment=document.getElementById("final-payment");
+
+// console.log(typeof(mrp.textContent));
+
+discounts=discounts.textContent=1500;
+discounts=Number(discounts);
+
+let finalValue=mrp.textContent;
+finalValue=Number(finalValue)-discounts;
+console.log(typeof(finalValue));
+final_Payment.textContent=finalValue;

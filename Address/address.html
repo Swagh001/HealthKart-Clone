@@ -10,6 +10,33 @@
 <body>
 <!-- ---------------------------------------navbar----------------- -->
 
+<!-- <div id="navbar-container">
+    <div id="navbar-container-1">
+        <img src="Logo.png" alt="">
+    </div>
+    <div id="navbar-container-2">
+        <div class="header-process-steps">
+            <div class="col_steps">
+                <img class="tick-icon" alt="tick" src="https://static1.hkrtcdn.com/hknext/static/media/checkout/fill-blue.svg">
+                <div class="header-cart-heading">Cart</div>
+                <div class="blue-horizontal-rule"> </div>
+            </div>
+            <div class="col_steps">
+                <img class="tick-icon" alt="tick" src="https://static1.hkrtcdn.com/hknext/static/media/checkout/blue-address.svg">
+                <div class="header-cart-heading">Address</div>
+                <div class="horizontal-rule"> </div>
+            </div>
+            <div class="col_steps">
+                <img class="tick-icon" alt="tick" src="https://static1.hkrtcdn.com/hknext/static/media/checkout/grey-payment.svg">
+                <div class="header-cart-grey-heading">Payment</div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div id="Navbar-AddressPage">
+    
+</div>
+
 <!--address Page --------------------------------------------------------------- -->
 
     <form>
@@ -71,33 +98,40 @@
     </form>
         <div id="container-2" style="row-gap: 0px;">
             <h3>Order Summary &nbsp; <span id="Order_count"></span></h3>
-            
+            <!-- ₹ -->
             <div class="order">
                 <div><p>Total MRP</div>
-                <div><p>1500</p></div>
+                <div><p >₹<span id="mrp"> 5000</span></p></div>
             </div>
 
             <div class="order">
-                <div><p>Total Discounts </div>
-                <div><p>1500</p></div>
+                <div><p>Total Discounts <img src="https://static1.hkrtcdn.com/hknext/static/media/common/pop-icon.svg" alt="pop"></p></div>
+                <div><p id="discounts">0</p></div>
             </div>
 
             <div class="order">
                 <div><p>Shipping Charges</div>
-                <div><p>1500</p></div>
+                <div><p>FREE</p></div>
             </div>
             <hr>
 
             <div class="order">
                 <div><h3>Payable Amount </div>
-                <div><h3>1500</h3></div>
+                <div><h3 id="final-payment"></h3></div>
             </div>
         
-            <p>You will Save ₹<span>1,500</span> & Earn ₹98 HK Cash on this order</p>
+            <p style="font-size: 12px; color: green;">You will Save ₹<span>1,500</span> & Earn ₹98 HK Cash on this order</p>
         </div>
     </div>
 
-    <script src="address.js"></script>
+
+<!--Footer ------------------------------------------------- -->
+<div id="address_footer">
+    <div><p>Copyright © , HealthKart.com, or its affiliates </p></div>
+    <div></div>
+</div>
+
+    <script src="address.js" type="module"></script>
 </body>
 </html>
 <script src="https://kit.fontawesome.com/6c991e2d26.js" crossorigin="anonymous"></script>

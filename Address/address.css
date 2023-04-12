@@ -4,10 +4,38 @@ body{
     font-size: 14px;
     color:#494953;
 }
+
+/*navbar-----------------------------------------------------`------------ */
+#navbar-container{
+    display: flex;
+    background-color: white;
+    /* border: solid; */
+    margin: -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#navbar-container-1{
+    width: 30%;
+    /* border: solid; */
+    justify-content: center;
+    padding-left: 100px;
+}
+
+#navbar-container-1 img{
+    height: 80px;
+    /* border: solid; */
+}
+.header-process-steps{
+    display: flex;
+    margin-left: 10px;
+    padding: 10px;
+    column-gap: 100px;
+    /* border: solid; */
+}
+/* body```````------------------------------------------------------------------------- */
 #container-Main{
     display: flex;
     /* border: 1px solid; */
-    margin: 30px 100px 60px;
+    margin: 30px 80px 10px 80px;
     column-gap: 50px;
     
 }
