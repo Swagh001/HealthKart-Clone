@@ -2,11 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Page</title>
+    <link rel="stylesheet" href="address.css">
 </head>
 <body>
-    
+<!-- ---------------------------------------navbar----------------- -->
+
+<!--address Page --------------------------------------------------------------- -->
+
+    <form>
+    <div id="container-Main">
+        <div id="container-1">
+            <div class="inner-conatiner">
+                <div>
+                    <label for="name">Name <span class="star">*</span></label><br>
+                    <input type="text" id="name" name="name" required placeholder=" &nbsp; Enter Full name" class="inputField">
+                </div>
+                <div>
+                    <label for="mobile">Mobile No.<span class="star">*</span></label><br>
+                    <input type="number" id="mobile" name="Mobile" required placeholder=" &nbsp;Enter 10 digit no." class="inputField">
+                </div>
+            </div>
+            <br>
+            <div>
+                <div id="adrs">
+                    <div>
+                        <label for="address">Address(Area & Street) <span class="star">*</span></label>
+                    </div>
+                    <div style="color: #26bdc0;">
+                        <i class="fa-solid fa-location-crosshairs" style="color: #26bdc0; size: 20px;"></i>
+                        <!-- &nbsp; Use my Current Location  -->
+                        <input type="button" name="location" id="location" value="&nbsp; Use my Current Location"
+                        style="border: none; background-color: white; color: #26bdc0; font-weight: bold; font-size: 15px; cursor: pointer;">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" id="address" name="address" required placeholder=" &nbsp;Type Your Address">
+                </div>
+            </div>
+            <br>
+            <div class="inner-conatiner">
+                <div>
+                    <label for="landmark">Landmark</label><br>
+                    <input type="text" id="landmark" name="Landmark" required placeholder=" &nbsp;Enter Landmark" class="inputField">
+                </div>
+                <div>
+                    <label for="pincode">Pincode <span class="star">*</span></label><br>
+                    <input type="number" id="pincode" name="Pincode" required placeholder=" &nbsp;Enter Pincode" class="inputField">
+                </div>
+            </div>
+            <br>
+            <div id="newInut-1">
+                <label for="name">Address Type</label><br>
+                <input type="button" value="Home" class="btn btn-1">
+                <input type="button" value="Office" class="btn btn-2">
+                <input type="button" value="Others" class="btn btn-3" >
+                <!-- <div id="newinput"></div> -->
+                <!-- <button class="btn">Home</button>
+                <button class="btn">Office</button>
+                <button class="btn">Others</button> -->
+            </div>
+            <br>
+            <button id="submit" type="submit">Save & Deliver</button>
+        </div>
+
+    </form>
+        <div id="container-2" style="row-gap: 0px;">
+            <h3>Order Summary &nbsp; <span id="Order_count"></span></h3>
+            
+            <div class="order">
+                <div><p>Total MRP</div>
+                <div><p>1500</p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Total Discounts </div>
+                <div><p>1500</p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Shipping Charges</div>
+                <div><p>1500</p></div>
+            </div>
+            <hr>
+
+            <div class="order">
+                <div><h3>Payable Amount </div>
+                <div><h3>1500</h3></div>
+            </div>
+        
+            <p>You will Save ₹<span>1,500</span> & Earn ₹98 HK Cash on this order</p>
+        </div>
+    </div>
+
+    <script src="address.js"></script>
 </body>
 </html>
+<script src="https://kit.fontawesome.com/6c991e2d26.js" crossorigin="anonymous"></script>
