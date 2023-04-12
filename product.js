@@ -404,12 +404,13 @@ function productObj(
 
         let prodiv= document.createElement("div");
         prodiv.id="prodiv";
-        prodiv.addEventListener("click", () => {
-          proDesc(products);
-        })
+      
 
         let prodivtop= document.createElement("div");
         prodivtop.id="prodivtop";
+        prodivtop.addEventListener("click", () => {
+          proDesc(products);
+        })
 
 
 

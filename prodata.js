@@ -6,6 +6,7 @@ function display(){
 
     let mainimg=document.createElement("img");
     mainimg.src=item.image;
+    
 
     document.getElementById("main-image").append(mainimg);
 
@@ -13,18 +14,27 @@ function display(){
 
     let smallimg2=document.createElement("img");
     smallimg2.src=item.image2;
+    smallimg2.addEventListener("click", () =>{
+        mainimg.src=item.image2;
+    })
 
     document.getElementById("small-image2").append(smallimg2);
     //small-image3
 
     let smallimg3=document.createElement("img");
     smallimg3.src=item.image3;
+    smallimg3.addEventListener("click", () =>{
+        mainimg.src=item.image3;
+    })
 
     document.getElementById("small-image3").append(smallimg3);
     //small-image4
 
     let smallimg4=document.createElement("img");
     smallimg4.src=item.image4;
+    smallimg4.addEventListener("click", () =>{
+        mainimg.src=item.image4;
+    })
 
     document.getElementById("small-image4").append(smallimg4);
 
@@ -166,16 +176,16 @@ function display(){
     let cartBtn= document.createElement("button");
     cartBtn.id="cart-button";
     cartBtn.textContent="Add to Cart";
-    // cartBtn.addEventListener("click", () => {
-    //   addToCart(item);
-    // });
+    cartBtn.addEventListener("click", () => {
+      addToCart(item);
+    });
 
     let quickBtn= document.createElement("button");
     quickBtn.id="quick-button";
     quickBtn.textContent="Quick Buy";
-    // quickBtn.addEventListener("click", () => {
-    //   quickbuy(item);
-    // });
+    quickBtn.addEventListener("click", () => {
+      quickbuy(item);
+    });
 
 
     topdiv7.append(topdiv7inner1, cartBtn, quickBtn);
@@ -189,3 +199,17 @@ function display(){
 }
 
 display();
+
+let cartArray=JSON.parse(localStorage.getItem("cartItem")) || [];
+
+  function addToCart(products){
+    cartArray.push(products);
+    localStorage.setItem("cartItem",JSON.stringify(cartArray));
+
+  }
+  function quickbuy(products){
+    cartArray.push(products);
+    localStorage.setItem("cartItem",JSON.stringify(cartArray));
+    window.location.href="cartpage.html";
+
+  }
