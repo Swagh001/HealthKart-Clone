@@ -25,17 +25,19 @@
             display: flex;
         }
         #left{
+            margin: 5px;
             width: 20%;
             height: 500px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }#right{
-            width: 80%;
+            width: 77%;
             height: 1000px;
             margin: 10px;
             /* border: 1px solid red; */
         }
         .top1>img{
             border-radius: 5px;
+            width: 100%;
         }
         .top2{
             display: flex;
@@ -69,7 +71,62 @@
             </b> </p>
         </div>
         <div id="main-content">
-            <div id="left"></div>
+            <div id="left">
+                <div id="containerfilter">
+                    <div style="display: flex ;align-items: center">
+                      <h3>Filters</h3>
+                      <a href="product.html" id="reset">Reset All</a>
+                    </div>
+                    <div id="form">
+                      <h3 style="margin-left: 20px">▲ Discount</h3>
+                      <form style="display: flex; flex-direction: column; margin-left: 10px">
+                        <div>
+                          <input type="radio" id="html" name="fav_language" value="HTML" onclick="filter1()" />
+                          <label for="html">11% and above</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="css" name="fav_language" value="CSS" onclick="filter2()" />
+                          <label for="css">15% and above</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript" onclick="filter3()" />
+                          <label for="javascript">20% and above</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="javascript1" name="fav_language" value="JavaScript1" onclick="filter4()" />
+                          <label for="javascript1">25% and above</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="form2">
+                      <h3 style="margin-left: 20px">▲ price</h3>
+                      <form style="display: flex; flex-direction: column; margin-left: 10px">
+                        <div>
+                          <input type="radio" id="a" value="a" name="alpha" onclick="filter5()" />
+                          <label for="a">1-1500</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="b" value="b" name="alpha" onclick="filter6()" />
+                          <label for="b">1500-4000</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="c" value="c" name="alpha" onclick="filter7()" />
+                          <label for="c">4000-8000</label>
+                        </div>
+                        <br />
+                        <div>
+                          <input type="radio" id="d" value="d" name="alpha" onclick="filter8()" />
+                          <label for="d">8000-15000</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+            </div>
             <div id="right">
                 <div class="top1">
                     <img src="https://img9.hkrtcdn.com/23185/bnr_2318418_o.png" alt="">

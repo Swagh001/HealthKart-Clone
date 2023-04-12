@@ -22,6 +22,7 @@
     /* height: 500px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 0 12px 0 12px;
+    cursor: pointer;
 }
 #prodivtop{
     width: 250px;
@@ -113,8 +114,32 @@
     background-color: #fff9f4;
     border-radius: 8px;
     padding: 12px 75px;
+    cursor: pointer;
 }
 #cart-button:hover{
     background-color: #ff8914;
     color: white;
 }
+
+  #reset {
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(23, 143, 160);
+    font-weight: bolder;
+  }
+
+  #form {
+    width: 200px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-width: thin;
+  }
+
+  #form2 {
+    width: 200px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-width: thin;
+  }

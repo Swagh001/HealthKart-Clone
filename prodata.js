@@ -2,6 +2,8 @@ var item= JSON.parse(localStorage.getItem("ProductDescription"));
 console.log(item);
 
 function display(){
+
+    document.title=item.title;
     //main-image
 
     let mainimg=document.createElement("img");
@@ -160,12 +162,11 @@ function display(){
     text1.id="text1";
 
     let text2=document.createElement("p");
-    text2.textContent=`1  `;
+    text2.textContent=1;
     text2.id="text2";
     let text3=document.createElement("p");
     text3.textContent=`+ `;
     text3.id="text1";
-
     
     let topdiv7inner1=document.createElement("div");
     topdiv7inner1.id="topdiv7inner1";
@@ -178,6 +179,7 @@ function display(){
     cartBtn.textContent="Add to Cart";
     cartBtn.addEventListener("click", () => {
       addToCart(item);
+      cartBtn.textContent="Added to Cart"
     });
 
     let quickBtn= document.createElement("button");
@@ -205,6 +207,7 @@ let cartArray=JSON.parse(localStorage.getItem("cartItem")) || [];
   function addToCart(products){
     cartArray.push(products);
     localStorage.setItem("cartItem",JSON.stringify(cartArray));
+
 
   }
   function quickbuy(products){

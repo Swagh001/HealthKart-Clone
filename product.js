@@ -29,7 +29,7 @@ function productObj(
     "https://img1.hkrtcdn.com/26624/prd_2662310-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
     "https://img4.hkrtcdn.com/11959/prd_1195813-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
     "https://img10.hkrtcdn.com/12090/prd_1208909-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
-    "https://img10.hkrtcdn.com/12090/prd_1208909-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
+    "https://img5.hkrtcdn.com/26624/prd_2662314-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_o.jpg",
     "MuscleBlaze Biozyme Performance Whey, 4.4 lb, Rich Chocolate",
     4.5,
     "2.8k",
@@ -41,7 +41,7 @@ function productObj(
     32,
     "https://img7.hkrtcdn.com/16989/prd_1698896-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
     "https://img7.hkrtcdn.com/17182/prd_1718116-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
-    "https://img2.hkrtcdn.com/14146/prd_1414551-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
+    "https://img10.hkrtcdn.com/14146/prd_1414549-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
     "https://img2.hkrtcdn.com/14146/prd_1414551-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg",
     "MB Fuel One Whey Protein Immunity+, 8.8 lb, Chocolate",
     4.1,
@@ -53,8 +53,8 @@ function productObj(
   var c = new productObj(
     30,
     "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
-    "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
-    "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
+    "https://img1.hkrtcdn.com/18798/prd_1879790-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
+    "https://img3.hkrtcdn.com/18798/prd_1879792-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
     "https://img3.hkrtcdn.com/18797/prd_1879652-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_o.jpg",
     "ON  Gold Standard 100% Whey Protein, 5 lb, Double Rich Chocolate",
     4.2,
@@ -66,9 +66,9 @@ function productObj(
   var d = new productObj(
     27,
     "https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_o.jpg",
-    "https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_o.jpg",
-    "https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_o.jpg",
-    "https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_o.jpg",
+    "https://img7.hkrtcdn.com/17182/prd_1718116-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg",
+    "https://img10.hkrtcdn.com/14682/prd_1468159-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg",
+    "https://img1.hkrtcdn.com/24032/prd_2403160-MuscleTech-NitroTech-Whey-Protein-4.4-lb-Milk-Chocolate-India_o.jpg",
     "MuscleTech NitroTech Whey Protein, 4.4 lb, Milk Chocolate - India",
     4.7,
     "8.1k",
@@ -80,9 +80,9 @@ function productObj(
   let e = new productObj(
     27,
     "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg",
-    "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg",
-    "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg",
-    "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg",
+    "https://img4.hkrtcdn.com/15960/prd_1595993-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg",
+    "https://img6.hkrtcdn.com/14682/prd_1468155-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg",
+    "https://img8.hkrtcdn.com/14682/prd_1468167-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_o.jpg",
     "MuscleBlaze Whey Gold Protein, 4.4 lb, Rich Milk Chocolate",
     4.5,
     "1.9k",
@@ -93,9 +93,9 @@ function productObj(
   let f = new productObj(
     30,
     "https://img8.hkrtcdn.com/13144/prd_1314337-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_c_m.jpg",
-    "https://img8.hkrtcdn.com/13144/prd_1314337-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_c_m.jpg",
-    "https://img8.hkrtcdn.com/13144/prd_1314337-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_c_m.jpg",
-    "https://img8.hkrtcdn.com/13144/prd_1314337-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_c_m.jpg",
+    "https://img9.hkrtcdn.com/19800/prd_1979998-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_o.jpg",
+    "https://img9.hkrtcdn.com/19800/prd_1979998-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_o.jpg",
+    "https://img7.hkrtcdn.com/19800/prd_1979996-MB-Fuel-One-Whey-Protein-Immunity-4.4-lb-Chocolate_o.jpg",
     "MB Fuel One Whey Protein Immunity+, 4.4 lb, Chocolate",
     4.4,
     "1.1k",
@@ -526,6 +526,7 @@ function productObj(
         cartBtn.textContent="Add to Cart";
         cartBtn.addEventListener("click", () => {
           addToCart(products);
+          cartBtn.textContent="Added to Cart"
         });
         // cartBtn.append(icon);
         let icon=document.createElement("img");

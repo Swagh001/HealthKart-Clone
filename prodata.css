@@ -123,6 +123,7 @@
     background-color: #fff9f4;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
     
 }
 #quick-button{
@@ -133,6 +134,7 @@
     border: none;
     background-color: #ff8914;
     color: white;
+    cursor: pointer;
 
 }
 #left2box1in{
@@ -399,5 +401,7 @@ text-align: left;
     cursor:pointer;
 
 }
-
+#quick-button:hover{
+   background-color: #c06c19;
+}
 
