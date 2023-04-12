@@ -91,6 +91,7 @@ function display(){
     let price= document.createElement("h2");
     price.textContent=`Price: ₹${item.price}`;
     price.style.fontSize="20px";
+    price.style.fontWeight="600";
     let discount= document.createElement("h4");
     discount.textContent=`${item.discount}% off`;
     discount.style.fontSize="14px";
@@ -113,6 +114,8 @@ function display(){
 
     topdiv4.append(inc);
 
+    //topdiv5
+
     let topdiv5=document.createElement("div");
     topdiv5.id="topdiv5";
 
@@ -124,12 +127,65 @@ function display(){
 
     topdiv5.append(pmpicon,pmptext);
 
+    //topdiv6
+
+    let topdiv6=document.createElement("div");
+    topdiv6.id="topdiv6";
+
+    let text=document.createElement("p");
+    text.textContent=`3 interest free payments of ₹1899.68 with    `
+
+    let simpl=document.createElement("img");
+    simpl.src="https://static1.hkrtcdn.com/hknext/static/media/logos/simpl.png";
+
+    topdiv6.append(text,simpl)
+
+    //topdiv7
+
+    let topdiv7=document.createElement("div");
+    topdiv7.id="topdiv7";
+
+    let text1=document.createElement("p");
+    text1.textContent=`- `;
+    text1.id="text1";
+
+    let text2=document.createElement("p");
+    text2.textContent=`1  `;
+    text2.id="text2";
+    let text3=document.createElement("p");
+    text3.textContent=`+ `;
+    text3.id="text1";
+
+    
+    let topdiv7inner1=document.createElement("div");
+    topdiv7inner1.id="topdiv7inner1";
+
+    // topdiv7.append(topdiv7inner1);
+    topdiv7inner1.append(text1,text2,text3);
+
+    let cartBtn= document.createElement("button");
+    cartBtn.id="cart-button";
+    cartBtn.textContent="Add to Cart";
+    // cartBtn.addEventListener("click", () => {
+    //   addToCart(item);
+    // });
+
+    let quickBtn= document.createElement("button");
+    quickBtn.id="quick-button";
+    quickBtn.textContent="Quick Buy";
+    // quickBtn.addEventListener("click", () => {
+    //   quickbuy(item);
+    // });
+
+
+    topdiv7.append(topdiv7inner1, cartBtn, quickBtn);
+
 
     topdiv1innerleft.append(ratimg,ratingp);
     topdiv1innerright.append(wishimg,shareimg);
     topdiv1.append(topdiv1innerleft,topdiv1innerright);
 
-    document.getElementById("right").append(category,title,type,topdiv1,topdiv2,topdiv3,topdiv4,topdiv5);
+    document.getElementById("right").append(category,title,type,topdiv1,topdiv2,topdiv3,topdiv4,topdiv5,topdiv6,topdiv7);
 }
 
 display();

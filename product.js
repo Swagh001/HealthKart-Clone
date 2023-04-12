@@ -526,8 +526,9 @@ function productObj(
         cartBtn.addEventListener("click", () => {
           addToCart(products);
         });
-
-
+        // cartBtn.append(icon);
+        let icon=document.createElement("img");
+        icon.src="https://static1.hkrtcdn.com/hknext/static/media/common/cartNew.svg";
 
         
 
