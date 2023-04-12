@@ -79,6 +79,9 @@ input{
     font-family:Montserrat,sans-serif;
     font-weight: 600;
 }
+#bestSell121:hover{
+    color: #00b5b7;
+}
 #corrSpace121{
     margin-left: -97px;
     /* cursor: pointer; */
@@ -257,4 +260,16 @@ input{
 }
 #card567:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.carousel-item{
+    transition: transform 0.5s ease;
+}
+#colorBoundary121{
+    height: 9px;
+    background-color: #f4f4f4;
+    margin-top: 33px;
+    margin-bottom: 30px;
+}
+#extraPrice121{
+    
 }
