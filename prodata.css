@@ -1,0 +1,79 @@
+*{
+    
+    font-family: 'Montserrat', sans-serif;
+        /* font-size : 14px; */
+        font-weight: 600;
+    
+}
+#right h3{
+    margin-top: -10px;
+}
+#main-image img{
+    width: 100%;
+}
+#small-image2 img{
+    width: 100%;
+    height: 150px;
+}
+#small-image3 img{
+    width: 100%;
+    height: 150px;
+}
+#small-image4 img{
+    width: 100%;
+    height: 150px;
+}
+#ratimg{
+    width: 40%;
+    height: 60%;
+}
+#topdiv1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+#topdiv2{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: -17px;
+}
+#topdiv3{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: -27px;
+}
+#topdiv3innerleft{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+#topdiv1innerleft{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#topdiv1innerright{
+    display: flex;
+}
+#topdiv4 p{
+    margin: -15px 0;
+}
+#topdiv5{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    margin-top: 30px;
+    width: 55%;
+    height: 30px;
+    /* justify-content: center; */
+}
+#topdiv5 img{
+    padding: 5px;
+}
+#topdiv5 p{
+    font-size: 10;
+    font-weight: 500;
+   padding: 5px;
+}
