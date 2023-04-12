@@ -3,6 +3,7 @@ body{
     font-family: sans-serif;
     font-size: 14px;
     color:#494953;
+    width: 100%;
 }
 
 /*navbar-----------------------------------------------------`------------ */
@@ -35,7 +36,7 @@ body{
 #container-Main{
     display: flex;
     /* border: 1px solid; */
-    margin: 30px 80px 10px 80px;
+    margin: 30px 0px 50px 80px;
     column-gap: 50px;
     
 }
@@ -134,4 +135,13 @@ body{
 .order{
     display: flex;
     justify-content: space-between;
+}
+
+#address_footer{
+    background-color: white;
+    padding: 5px 0px 5px 100px;
+}
+#logo-div{
+    display: flex;
+    column-gap: 10px;
 }

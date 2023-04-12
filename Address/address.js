@@ -1,7 +1,11 @@
 import nav_bar from "./compo/New_navbar.js";
 
 let nevbardiv=document.getElementById("Navbar-AddressPage");
-nevbardiv.innerHTML=nav_bar();
+nevbardiv.innerHTML = nav_bar();
+
+import footer_bar from "./compo/New_footer.js";
+let footerbar=document.getElementById("footer-bar");
+footerbar.innerHTML = footer_bar();
 
 
 document.querySelector("form").addEventListener("submit",submit);
@@ -12,7 +16,31 @@ function submit(){
     let mobile=document.getElementById("mobile").value;
     let address=document.getElementById("address").value;
     let landmark=document.getElementById("landmark").value;
-    let pincode=document.getElementById("pincode").value;
+    let pincode=document.getElementById("pincode");
+
+    pincode.oninput=function(){
+
+        let city_div=document.createElement("div");
+        city_div.setAttribute("id","city_div");
+
+        let newcity_1=document.createElement("input");
+        // newcity_1.setAttribute("id","city_div");
+        new_input.placeholder="Eg: MUMBAI";
+
+        city_div.append(new_input);
+
+        let state_div=document.createElement("div");
+        state_div.setAttribute("id","state_div");
+
+        let newstate_1=document.createElement("input");
+        // newstate_1.setAttribute("id","newstate_div");
+        newstate_1.placeholder="Eg: MAHARASHATRA";
+        state_div.append(newstate_1)
+
+        // city_div.append(newcity_1,newstate_1);
+        document.getElementById("newinput-3").append(city_div,state_div)
+    }
+    pincode=pincode.value;
 
     console.log("hello"+name);
 
