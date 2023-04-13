@@ -32,8 +32,8 @@ body{
     column-gap: 80px;
     /* border: solid; */
 }
+/* body----------------------------------------------------------------------------------------------- */
 
-/* body```````------------------------------------------------------------------------- */
 #container-Main{
     display: flex;
     /* border: 1px solid; */
@@ -43,13 +43,36 @@ body{
 }
 
 #container-1{
-    padding: 20px 30px 40px 20px;
     width: 60%;
     /* border: 1px solid; */
-    border-radius: 10px;
+    /* border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: white;
+    background-color: white; */
 }
+
+#container-11{
+    /* display: flex; */
+    background-color: white;
+    padding: 10px 20px 5px 20px;
+    border-radius: 10px;
+}
+#container-12{
+    /* display: flex; */
+    margin-top: 20px;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+}
+
+#para-12{
+    border: 2px solid skyblue;
+}
+
+
+
+
+
+
 
 #container-2{
     /* border: 1px solid; */
@@ -60,87 +83,22 @@ body{
     height: 20%;
 
 }
-
-.inner-conatiner{
-    display: flex;
-    /* border: 1px solid; */
-    column-gap: 40px;
-}
-.inner-conatiner>div{
-    width: 50%;
-    /* border: solid; */
-}
-#adrs{
-    display: flex;
-    justify-content: space-between;
-}
-
-#address{
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(216, 214, 214);
-}
-
-
-/* .btn:active{
-    background-color: grey;
-} */
-
-.btn{
-    height: 30px;
-    width: 70px;
-    margin-top: 5px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(216, 214, 214);
-    cursor: pointer;   
-}
-
-#submit{
-    background-color: #26bdc0;;
-    color: white;
-    border: none;
-    height: 40px;
-    width: 200px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid;
-    /* border-color: rgb(216, 214, 214); */
-}
-.star{
-    color: red;
-}
-.inputField{
-    height: 40px;
-    margin-top: 5px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(216, 214, 214);
-}
-
-#new_input_1{
-    height: 40px;
-    margin-top: 5px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(216, 214, 214);
-}
-
 .order{
     display: flex;
     justify-content: space-between;
 }
 
+
+
+
+
+
+
+
 /* Footer-------------------------------------------------------------------------------------------- */
 #address_footer{
     background-color: white;
+    margin-top: 10px;
     padding: 5px 0px 5px 100px;
 }
 #logo-div{

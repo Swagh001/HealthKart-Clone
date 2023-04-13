@@ -3,39 +3,46 @@ import nav_bar from "./compo/New_navbar.js";
 let nevbardiv=document.getElementById("Navbar-AddressPage");
 nevbardiv.innerHTML = nav_bar();
 
+// for cart 
+{/* <i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i><i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i> */}
+
+
 let line=document.createElement("p");
-line.innerHTML=`<i class="fa-solid fa-arrow-right" style="color: #1f5120;"></i>`;
+line.innerHTML=`<i class="fa-solid fa-arrow-right fa-beat-fade fa-2xl" style="color: #1f5120;"></i>`;
 document.getElementById("line").append(line);
-document.getElementById("Address-icon").style.backgroundColor="blue";
+// document.getElementById("Address-icon").style.backgroundColor="blue";
 
 import footer_bar from "./compo/New_footer.js";
 let footerbar=document.getElementById("footer-bar");
 footerbar.innerHTML = footer_bar();
 
 let count=0;
+var newcity_1=document.createElement("input");
+var newstate_1=document.createElement("input");
 document.getElementById("pincode").oninput=function(){
     count++;
     if(count===6){
         // console.log("hello");
-        let city_div=document.createElement("div");
+        var city_div=document.createElement("div");
         city_div.setAttribute("id","city_div");
 
-        let label_1=document.createElement("label");
+        var label_1=document.createElement("label");
         label_1.textContent="City";
-        let newcity_1=document.createElement("input");
+        
         // newcity_1.setAttribute("id","city_div");
         newcity_1.placeholder="Eg: MUMBAI";
         newcity_1.className="inputField";
+    
 
         city_div.append(label_1,newcity_1);
 
-        let state_div=document.createElement("div");
+        var state_div=document.createElement("div");
         state_div.setAttribute("id","state_div");
 
-        let label_2=document.createElement("label");
+        var label_2=document.createElement("label");
         label_2.textContent="State";
-        let newstate_1=document.createElement("input");
-        newstate_1.placeholder="Eg: MAHARASHATRA";
+        
+        newstate_1.placeholder="Eg: MAHARASHTRA";
         newstate_1.className="inputField";
 
         state_div.append(label_2,newstate_1)
@@ -57,7 +64,7 @@ function submit(){
     let landmark=document.getElementById("landmark").value;
     let pincode=document.getElementById("pincode");
 
-    
+    // let city=document.getElementById("")    
     pincode=pincode.value;
 
     console.log("hello"+name);
@@ -68,11 +75,14 @@ function submit(){
         address:address,
         landmark:landmark,
         pincode:pincode,
+        cityname:newcity_1.value,
+        stateName:newstate_1.value
     };
 
     AddressArr.push(addressObj);
     
     localStorage.setItem("AddressData",JSON.stringify(AddressArr));
+    location.assign("./Payment/payment.html");
 }
 
 
@@ -95,6 +105,7 @@ function addressSelect(){
     var selectedBtn=document.querySelector(".btn-1");
     selectedBtn.style.backgroundColor="rgb(216, 214, 214)";
     console.log(selectedBtn.value);
+    let Home_office_friend= localStorage.setItem("location","Home");
 }
 
 function addressSelect2(){
@@ -106,6 +117,7 @@ function addressSelect2(){
     var selectedBtn2=document.querySelector(".btn-2");
     selectedBtn2.style.backgroundColor="rgb(216, 214, 214)";
     console.log(selectedBtn2.value);
+    let Home_office_friend= localStorage.setItem("location","office");
 }
 
 function addressSelect3(){
@@ -124,7 +136,9 @@ function addressSelect3(){
     new_input.setAttribute("id","new_input_1");
     new_input.placeholder="Eg: Friend's Place";
     new_div.append(new_input);
-    document.getElementById("newInut-1").append(new_div)
+    document.getElementById("newInut-1").append(new_div);
+
+    let Home_office_friend= localStorage.setItem("location","Friend");
 }
 
 let mrp = document.getElementById("mrp");
@@ -139,4 +153,5 @@ discounts=Number(discounts);
 let finalValue=mrp.textContent;
 finalValue=Number(finalValue)-discounts;
 console.log(typeof(finalValue));
-final_Payment.textContent=finalValue;
+final_Payment.textContent="₹ "+finalValue;
+

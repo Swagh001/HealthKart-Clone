@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- <p>welcome chhote</p> -->
+<!-- navbar --------------------------------------------------------------------------------------------------->
+    <div id="Navbar-AddressPage">
+    </div>
+    
+<!--Payment body  -->
+
+<form>
+    <div id="container-Main">
+        <div id="container-1">
+            <div id="container-11">
+                <div style="display: flex; justify-content: space-between;">
+                    <div><h3>Delivery Address</h3></div>
+                    <div><h3>Change</h3></div>
+                </div>
+                <div id="address-data" style="display: flex;">
+                    <img src="https://static1.hkrtcdn.com/hknext/static/media/payment/location-address.svg" alt="">
+                </div>
+            </div>
+            
+            
+            
+            
+            <div id="container-12">
+                <div>
+                    <h3>Payment Method</h3>
+                    <p id="para-12">As per new RBI guidelines, some of your previously saved cards may no longer be displayed.
+                        Please enter your card details again and ensure you give your consent to save it for future payments.
+                        ...<span id="learnmore" style="color: skyblue; font-weight: bold;">Learn More</span></p>
+                </div>
+                <div>
+                    <div class="">
+                        <ul class="" id="paymentNav">
+                            <li class="tabs" data-payment-mode="1000">Pay Using UPI</li>
+                            <li class="tabs" data-payment-mode="1000">Debit Card</li>
+                            <li class="tabs" data-payment-mode="1000">Credit Card</li>
+                            <li class="tabs" data-payment-mode="1000">Simpl</li>
+                            <li class="tabs" data-payment-mode="1000">Wallets</li>
+                            <li class="tabs" data-payment-mode="1000">Internet Banking</li>
+                            <li class="tabs" data-payment-mode="1000">EMI or Pay Later</li>
+                            <li class="tabs" data-payment-mode="40">Cash On Delivery</li>
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+        <div id="container-2" style="row-gap: 0px;">
+            <h3>Order Summary &nbsp; <span id="Order_count"></span></h3>
+            <!-- ₹ -->
+            <div class="order">
+                <div><p>Total MRP</div>
+                <div><p >₹<span id="mrp"> 5000</span></p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Total Discounts <img src="https://static1.hkrtcdn.com/hknext/static/media/common/pop-icon.svg" alt="pop"></p></div>
+                <div><p id="discounts" style="color: green; font-weight: bold;">0</p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Shipping Charges</div>
+                <div><p style="color: green; font-weight: bold">FREE</p></div>
+            </div>
+            <hr>
+
+            <div class="order">
+                <div><h3>Payable Amount </div>
+                <div><h3 id="final-payment"></h3></div>
+            </div>
+        
+            <p style="font-size: 12px; color: green;">You will Save ₹<span>1,500</span> & Earn ₹98 HK Cash on this order</p>
+        </div>
+    </div>
+<!--footer-------------------------------------------------------------------------------------  -->
+    <footer id="footer-bar"></footer>        
+    
+    <script src="payment.js" type="module"></script>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/6c991e2d26.js" crossorigin="anonymous"></script>

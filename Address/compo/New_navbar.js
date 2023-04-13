@@ -16,6 +16,7 @@ export default function nav_bar(){
                             <div class="header-cart-heading">Address</div>
                             <div class="horizontal-rule"> </div>
                         </div>
+                        <div id="line-2"></div>
                         <div class="col_steps">
                             <img class="tick-icon" id="Payment-icon" alt="tick" src="https://static1.hkrtcdn.com/hknext/static/media/checkout/grey-payment.svg">
                             <div class="header-cart-grey-heading">Payment</div>
