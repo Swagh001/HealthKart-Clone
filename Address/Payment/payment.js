@@ -37,7 +37,6 @@ footerbar.innerHTML = footer_bar();
     document.getElementById("learnmore").addEventListener("click",learnmore);
 
     function learnmore(){
-
     }
 
 // container2
