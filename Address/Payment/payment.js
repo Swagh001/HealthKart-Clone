@@ -40,6 +40,12 @@ footerbar.innerHTML = footer_bar();
 
     }
 
+
+    const button = document.getElementById('pay-upi');
+    button.addEventListener('click', () => {
+    button.classList.add('clicked');
+    });
+
 // container2
 
 let mrp = document.getElementById("mrp");

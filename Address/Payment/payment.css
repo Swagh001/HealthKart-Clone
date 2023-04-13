@@ -65,9 +65,39 @@ body{
 }
 
 #para-12{
-    border: 2px solid skyblue;
+    border: 1px solid skyblue;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+#pay{
+    display: grid;;
+    grid-template-columns: (1,1fr);
+    width: 20%;
+    row-gap: 2px;
+}
+
+.pay_btn{
+    height: 50px;
+    width: 170px;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+    color: gray;
+}
+.pay_btn:hover{
+    color: black;
+}
+.pay_btn:focus{
+    background-color: white;
+    border-left: 4px solid #00a89d;
+    color: black;
+}
+.pay_btn:active{
+    background-color: white;
+    border-left: 4px solid #00a89d;
+    color: black;
+}
 
 
 
