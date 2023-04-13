@@ -270,6 +270,37 @@ input{
     margin-top: 33px;
     margin-bottom: 30px;
 }
-#extraPrice121{
-    
+.ml-2{
+    margin-left: -7rem;
+}
+.img2Mar{
+    margin-left: -4rem;
+}
+#poin231{
+    cursor: pointer;
+}
+#imgPower234{
+    height: 70px;
+    aspect-ratio: auto 68 / 70;
+    width: 68px;
+}
+#headPower234{
+    display: block;
+    margin: 14px 0 0;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 41px;
+    letter-spacing: 0;
+    color: #1c1c28;
+    line-height: 20px;
+}
+#paraPower234{
+    margin: 14px 0 0;
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 30.6px; */
+    letter-spacing: 0;
+    color: #77777e;
 }
