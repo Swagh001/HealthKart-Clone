@@ -29,8 +29,12 @@ body{
     display: flex;
     margin-left: 10px;
     padding: 10px;
-    column-gap: 100px;
+    column-gap: 80px;
     /* border: solid; */
+}
+
+#cart-icon{
+    background-color: blue;
 }
 /* body```````------------------------------------------------------------------------- */
 #container-Main{
