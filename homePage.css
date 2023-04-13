@@ -304,3 +304,32 @@ input{
     letter-spacing: 0;
     color: #77777e;
 }
+
+#logoHealth456{
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+}
+li{
+    color: #9ba4a4;
+    font-size: 13px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    opacity: .7;
+}
+#paraHeadFoot345{
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+li:hover{
+    color: #009393;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
