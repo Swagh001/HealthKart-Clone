@@ -109,7 +109,7 @@ function productObj(
     "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
     "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
     "https://img1.hkrtcdn.com/1691/prd_169080_o.jpg",
-    "Ultimate Nutrition Prostar 100% Whey Protein, 5.28 lb, Chocolate Creme",
+    "Ultimate Nutrition Prostar 100% Whey Protein, 5.28 lb, Chocolate",
     4.6,
     "2.3k",
     5749,
@@ -124,7 +124,7 @@ function productObj(
     "https://img2.hkrtcdn.com/14637/prd_1463611-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_c_m.jpg",
     "MuscleBlaze Biozyme Performance Whey, 4.4 lb, Chocolate Hazelnut",
     4.5,
-    1583,
+    "1.5k",
     4399,
     6149,
     4237
@@ -135,9 +135,9 @@ function productObj(
     "https://img10.hkrtcdn.com/12133/prd_1213299-MuscleBlaze-Raw-Whey-Protein-2.2-lb-Unflavoured_c_m.jpg",
     "https://img10.hkrtcdn.com/12133/prd_1213299-MuscleBlaze-Raw-Whey-Protein-2.2-lb-Unflavoured_c_m.jpg",
     "https://img10.hkrtcdn.com/12133/prd_1213299-MuscleBlaze-Raw-Whey-Protein-2.2-lb-Unflavoured_c_m.jpg",
-    "MuscleBlaze Raw Whey Protein, 2.2 lb, Unflavoured",
+    "MuscleBlaze Raw Whey Protein, 2.2 lb, ",
     4.5,
-    1990,
+    "1.9k",
     1699,
     1999,
     1648
@@ -187,9 +187,9 @@ function productObj(
     "https://img9.hkrtcdn.com/18797/prd_1879608-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-2-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img9.hkrtcdn.com/18797/prd_1879608-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-2-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img9.hkrtcdn.com/18797/prd_1879608-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-2-lb-Double-Rich-Chocolate_c_m.jpg",
-    "ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 2 lb, Double Rich Chocolate",
+    "ON (Optimum Nutrition) Gold ,Double Rich Chocolate",
     4.5,
-    2679,
+    "2.6k",
     3173,
     3799,
     3078
@@ -265,9 +265,9 @@ function productObj(
     "https://img5.hkrtcdn.com/18796/prd_1879524-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-1-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img5.hkrtcdn.com/18796/prd_1879524-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-1-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img5.hkrtcdn.com/18796/prd_1879524-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-1-lb-Double-Rich-Chocolate_c_m.jpg",
-    "ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 1 lb, Double Rich Chocolate",
+    "ON (Optimum Nutrition) Gold , Double Rich Chocolate",
     4.5,
-    2779,
+    "2.7k",
     1723,
     1839,
     1700
@@ -306,7 +306,7 @@ function productObj(
     "https://img4.hkrtcdn.com/14630/prd_1462993-XLR8-Flavoured-Whey-Protein-24-g-Protein-2-lb-Chocolate_c_m.jpg",
     "XLR8 Flavoured Whey Protein 24 g Protein, 2 lb, Chocolate",
     4.8,
-    4232,
+    "4.2k",
     1777,
     1888,
     1700
@@ -317,9 +317,9 @@ function productObj(
     "https://img1.hkrtcdn.com/18799/prd_1879880-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-8.8-lb-Double-Rich-Chocolate_o.jpg",
     "https://img1.hkrtcdn.com/18799/prd_1879880-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-8.8-lb-Double-Rich-Chocolate_o.jpg",
     "https://img1.hkrtcdn.com/18799/prd_1879880-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-8.8-lb-Double-Rich-Chocolate_o.jpg",
-    "ON (Optimum Nutrition) Gold Standard 100% Whey Protein, 8.8 lb, Double Rich Chocolate",
+    "ON Gold Standard 100% Whey Protein, 8.8 lb, Double Rich Chocolate",
     4.7,
-    1900,
+    "1.9k",
     12000,
     15000,
     11500
@@ -331,9 +331,9 @@ function productObj(
     "https://img6.hkrtcdn.com/12586/prd_1258555-GNC-Amp-Gold-Series-100-Whey-Protein-Advanced-4.4-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img6.hkrtcdn.com/12586/prd_1258555-GNC-Amp-Gold-Series-100-Whey-Protein-Advanced-4.4-lb-Double-Rich-Chocolate_c_m.jpg",
     "https://img6.hkrtcdn.com/12586/prd_1258555-GNC-Amp-Gold-Series-100-Whey-Protein-Advanced-4.4-lb-Double-Rich-Chocolate_c_m.jpg",
-    "GNC Amp Gold Series 100% Whey Protein Advanced, 4.4 lb, Double Rich Chocolate",
+    "GNC Amp Gold Series 100% Whey Protein Advanced, 4.4 lb",
     4.3,
-    1500,
+    "1.5k",
     5500,
     7000,
     5200
@@ -397,10 +397,52 @@ function productObj(
   );
   console.log(productArray);
 
-  function display(){
+  function sortPrice(){
+    var arr=[];
+      var selected=document.getElementById("sorting").value;
+      if(selected == "lth")
+      {
+           arr=productArray.sort(function (a,b){
+          return a.price - b.price;
+        });
+      }
+    
+      if(selected == "htl")
+      {
+          arr= productArray.sort(function (a,b){
+          return b.price - a.price;
+        });
+      }
+      display(arr);
+      console.log(products);
+    }
+
+  function display(ptoductArray){
     document.getElementById("product-list").innerHTML="";
 
     productArray.map((products) => {
+
+      //sorting
+
+      function sortPrice(){
+        var arr=[];
+          var selected=document.getElementById("sorting").value;
+          if(selected == "lth")
+          {
+               arr=products.sort(function (a,b){
+              return a.price - b.price;
+            });
+          }
+        
+          if(selected == "htl")
+          {
+              arr= products.sort(function (a,b){
+              return b.price - a.price;
+            });
+          }
+          display(arr);
+          console.log(products);
+        }
 
         let prodiv= document.createElement("div");
         prodiv.id="prodiv";
