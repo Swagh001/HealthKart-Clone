@@ -15,7 +15,7 @@
     
 <!--Payment body  -->
 
-<form>
+
     <div id="container-Main">
         <div id="container-1">
             <div id="container-11">
@@ -29,8 +29,7 @@
             </div>
             
             
-            
-            
+        
             <div id="container-12">
                 <div>
                     <h3>Payment Method</h3>
@@ -38,7 +37,7 @@
                         ...<span id="learnmore" style="color: skyblue; font-weight: bold; ">Learn More</span></p>
                         <!-- Please enter your card details again and ensure you give your consent to save it for future payments. -->   
                 </div>
-                <div>
+                <div id="payment-options">
                     <div id="pay">
                         <input type="button" class="pay_btn" id="pay-upi"value="Pay Using UPI">
                         <!-- <button class="pay_btn" id="pay-upi">Pay Using UPI</button> -->
@@ -64,12 +63,13 @@
                         <input type="button" class="pay_btn" id="pay-cod"value="Cash On Deleivery">
                         <!-- <button class="pay_btn" id="pay-cod">Cash On Deleivery</button> -->
                     </div>
-                    <div id="btn-data"></div>
+                    <div id="btn-data">
+                        
+                    </div>
                 </div>
             </div>
         </div>
 
-    </form>
         <div id="container-2" style="row-gap: 0px;">
             <h3>Order Summary &nbsp; <span id="Order_count"></span></h3>
             <!-- ₹ -->

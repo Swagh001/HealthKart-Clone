@@ -99,6 +99,70 @@ body{
     color: black;
 }
 
+/* allbtns_payment */
+#payment-options{
+    display: flex;
+    /* border: solid; */
+}
+#pay{
+    width: 30%;
+    /* border: solid; */
+}
+#btn-data{
+    /* border: solid; */
+
+}
+
+#p1{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.inputField{
+    height: 40px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(216, 214, 214);
+}
+#divpay{
+    display: flex;
+    column-gap: 15px;
+}
+#divpay .inputField{
+    /* border: solid; */
+    width:100% ;
+}
+#divpay button{
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#btndiv{
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+#btndiv input{
+    border: 1px solid grey;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+#btndiv input:hover{
+    cursor: pointer;
+}
+
+#btnupi:active{
+    border: 1px solid;
+    border-color: orange;
+}
 
 
 

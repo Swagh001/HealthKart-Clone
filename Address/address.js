@@ -6,16 +6,23 @@ nevbardiv.innerHTML = nav_bar();
 // for cart 
 {/* <i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i><i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i> */}
 
+let scroll=document.createElement("img");
+scroll.src="../images/nav_2.jpg";
+document.getElementById("navbar-container-2").append(scroll);
 
-let line=document.createElement("p");
-line.innerHTML=`<i class="fa-solid fa-arrow-right fa-beat-fade fa-2xl" style="color: #1f5120;"></i>`;
-document.getElementById("line").append(line);
-// document.getElementById("Address-icon").style.backgroundColor="blue";
+// let line=document.createElement("p");
+// line.innerHTML=`<i class="fa-solid fa-arrow-right fa-beat-fade fa-2xl" style="color: #1f5120;"></i>`;
+// document.getElementById("line").append(line);
+// // document.getElementById("Address-icon").style.backgroundColor="blue";
 
 import footer_bar from "./compo/New_footer.js";
 let footerbar=document.getElementById("footer-bar");
 footerbar.innerHTML = footer_bar();
 
+
+
+
+// body
 let count=0;
 var newcity_1=document.createElement("input");
 var newstate_1=document.createElement("input");
