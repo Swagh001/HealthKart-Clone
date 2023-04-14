@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+   
+
+        body{
+            width: 100%;
+            margin: auto;
+            color: black;
+            /* background-color:  rgb(235,236,238) */
+        }
+        div>img{
+            width:  20px;
+            height: 15px;
+            margin-top: 20px;
+        }
+        #parent>.sp{
+            display: flex;
+            justify-content: space-around;
+        }
+        /* .rk{
+          margin-left: 50%;
+            
+        } */
+        #child{
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+        .space>p>img{
+            width: 35px;
+            height: 30px;
+        }
+        .space>p>p{
+            display: block;
+            margin-right: 10px;
+        }
+        
+        #child>h2{
+            font-size: 50px;
+            color: rgb(51,63,72);
+        }
+        #child .ps{
+             font-size: 20px;
+             border: none;
+             background-color: rgb(51,63,72);
+             color: aliceblue;
+             width: 400px;
+             height: 60px;
+        }
+        #psb{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 80px; 
+        }
+        #fash {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#fash>div {
+    display: flex;
+    gap: 20px;
+}
+#fash img {
+    width: 60%;
+    height: 60%;
+}
+#fash hr{
+    transform: rotate(180deg);
+     margin-right: 15px;
+    margin-left: 15px;
+}
+        #email{
+            width: 400px;
+            height: 30px;
+        }
+        .k{
+            margin-left: 90px;
+        }
+       
+
+        
+        #cartprod{
+            width: 80%;
+            display: flex;
+            gap: 30px;
+            margin: auto;
+           justify-content: center;
+           /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+           /* margin-bottom: 20px; */
+          /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+          margin-top: 30px;
+          margin-bottom: 30px;
+          border: 1px solid rgb(220, 217, 217);
+          border-radius: 10px;
+        }
+        #cartprod>img{
+            width: 160px;
+            height: 180px;
+            /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+            padding: 0px 0px 10px 10px;
+            margin: auto;
+            
+            
+        }
+        /* #cartprod>.clas{
+         border: 2px solid;
+        } */
+        .class{
+            width: 40%;
+            margin-left: 20px;
+           
+        }
+        #rsk{
+            width: 40%;
+        }
+        .clas{
+           
+            width: 55%;
+        }
+        
+        /* .clas>h3{
+            width:60%;
+            
+        } */
+       .clas p{
+        width: 35px;
+       }
+       
+       #rsk{
+        
+        width: 50%;
+        
+       }
+       h2{
+        /* text-align: left; */
+        padding-left: 100px;
+       }
+       
+       #mus{
+        display: flex;
+        justify-content: space-around;
+       }
+        #cardval>p{
+           
+            font-weight: bold;
+           
+        }
+        #spmus{
+          display: block;
+          gap: 10px;
+          margin-left: -100px;
+          margin-top: -20px;
+        }
+        #divmus{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -40px;
+        /* gap: 40px; */
+        /* justify-content: left; */
+        /* border: 1px solid black; */
+        /* width: 100%; */
+        /* max-width: 100px; */
+        /* margin-left: -200px; */
+        }
+      
+       #btn{
+        background-color:rgb(199, 197, 197);
+        color: grey;
+        border: none;
+        width: 20px;
+        height: 20px;
+        
+        
+       }
+     #delbtn{
+      background-color: white;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      width: 90px;
+      height: 30px;
+    }
+    #imge{
+    width:30px;
+    height: 35px;
+   
+}
+    #cardval>p{
+        text-align: center;
+    }
+    #Offer{
+
+        width: 100%;
+        height: 180px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+       
+    }
+
+
+
+    #ww{
+      display: flex;
+      margin-top: 20px;
+    }
+    #dol{
+      display: block;
+      margin-top: -1px;
+    }
+
+    #mk{
+      display: flex;
+      margin-top: 18px;
+
+    }
+    #dol1{
+      display: block;
+      margin-top: -1px;
+      
+    }
+
+
+
+
+
+    #Offer>div>p{
+          font-weight: bold;
+          font-size: 25px;
+    }
+   
+   #Offer>div>button{
+    background-color:#00b5b7;
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    width: 80px;
+    border: none;
+   }
+   /* proceed button */
+   #kranti>button{
+      height: 60px;
+        width: 400px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-size: 25px;
+        background-color:#00b5b7;;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+       
+       
+   }
+   #kranti>button:hover{
+      cursor: pointer;
+    
+   }
+   #kranti{
+    display: block;
+    text-decoration: none;
+    margin-top: -50px;
+   }
+   .k>button{
+    width: 140px;
+    height: 45px;
+    background-color:rgb(82, 160, 180);
+    color: white;
+    margin-right: 23px;
+   }
+   #project{
+     height: 50px;
+     
+     background-color: rgb(38, 34, 34);
+   }
+   #prefer>div{
+         display: flex;
+   }
+   #preft{
+    
+    display: flex;
+    width: 90%;
+   justify-content: center;
+   gap: 50px;
+   margin: auto;
+   
+   }
+   #shu{
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 30%;
+    text-align: right;
+   }
+   #child{
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 70%;
+    
+   }
+   #promo{
+    width: 250px;
+    height: 30px;
+   }
+   #shubham{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -13px;
+    margin-bottom: 15px;
+    
+   }
+   #shubham>img{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: -10px;
+   }
+  #shubham>div>p{
+    
+    margin-left: 10px;
+    text-justify: distribute-all-lines;
+  }
+  #pankaj-hr{
+    width: 100%;
+    background-color:rgb(51,63,72);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  #email{
+    width: 400px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  #shubham-span1{
+    color: red;
+
+  }
+  #shubham-span2{
+   color:  rgb(24, 29, 33);
+   font-size: 15px;
+   font-weight: bold;
+  }
+  #shubham-span3{
+    text-decoration: underline;
+  }
+  #pojit{
+    width:100%;
+    height: 5px;
+    background-color: black;
+  }
+  nav+hr {
+    margin-top: 4.5%;
+}
+#gt{
+    display: flex;
+    justify-content: space-around;
+}
+#at{
+    display: flex;
+    justify-content: space-around;
+}
+   
+   @media only screen and (max-width: 900px) {
+        /* Medium Screen  */
+        #parent>.sp{
+            display: flex;
+            flex-direction: row;
+        }
+        #psb{
+            display: flex;
+            flex-direction: row;
+        }
+        #fash{
+            display: flex;
+            
+        }
+        #fash>div{
+            display: flex;
+        }
+        #cartprod{
+            display: flex;
+           
+        }
+        #prefer>div{
+         display: flex;
+   }
+   #preft{
+    
+    display: flex;
+   
+   
+   }
+      }
+      @media only screen and (max-width: 500px) {
+        /* Medium Screen  */
+        #parent>.sp{
+            display: flex;
+            flex-direction: column;
+        }
+        #psb{
+            display: flex;
+            flex-direction:column;
+            justify-content: space-around;
+           
+        }
+        #fash {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#fash>div {
+    display: flex;
+    gap: 20px;
+}
+#fash img {
+    width: 60%;
+    height: 60%;
+}
+#fash hr{
+    transform: rotate(180deg);
+     margin-right: 15px;
+    margin-left: 15px;
+}
+        
+        
+        #cartprod{
+            display: flex;
+           flex-direction: column;
+        }
+        #prefer>div{
+         display: flex;
+         flex-direction: column;
+   }
+   #preft{
+    display: flex;
+    flex-direction: column;
+   }
+      }
+    </style>
+</head>
+<body>
+
+  
+    <div id="parent">
+        
+        
+   
+       
+      <h2>Shopping Cart( <span id="per">0</span>  Items)</h2>
+    
+     <div id="preft">
+      
+      <div id="child">
+        
+        
+        <a id="details"  href="homePage.html">Continue Shopping </a>
+    
+      </div>
+     
+      <div id="shu">
+        
+        <div id="Offer">
+            <div>
+                <p>Apply Promo Code</p>
+                <input type="text" id="promo">
+                <button id="poi">Check</button>
+            </div> 
+        </div>
+        <div>
+          <a id="kranti" href="address.html"> <button>Proceed to Pay <span id="mere"></span></button> </a>
+        </div>
+  
+
+        <div id="pankaj-hr"></div>
+
+        <h2>Order Summary (<span id="permus">0</span>  items)</h2>
+          <div id="cardval">
+            <div id="mus">
+                <p>Total MRP:-</p>
+                <div id="mk">
+                    <p id="dol1">₹</p> <span id="pr"></span>
+                </div>
+               
+            </div>
+            
+            <div id="gt">
+                <h3>Shipping Charges:</h3>
+                <h3 id="ot" style="color: green;">Free</h3>
+            </div>
+        
+            <hr>
+            <div id="at">
+            <h3 >Payable Amount:</h3>
+            <div id="ww">
+             <p id="dol">₹</p> <span id="bb"></span>
+            </div>
+            
+        </div>
+          </div>
+            
+          
+          
+         
+      </div>
+      
+    
+      
+    </div>
+      
+              
+      
+ 
+    
+</body>
+</html>
+<script>
+
+import nav_bar from "../compo/New_navbar.js";
+
+let nevbardiv=document.getElementById("Navbar-AddressPage");
+nevbardiv.innerHTML = nav_bar();
+
+  
+var cartAr=JSON.parse(localStorage.getItem("cartItem")) || [];
+
+// document.getElementById('child').style.borderRadius = 50px;
+
+
+
+ 
+if(cartAr===0){
+     document.querySelector("#child").value;
+}else{
+    
+    displayCart(cartAr);
+    updateCount(cartAr);
+    caltotal(cartAr)
+    
+    
+    
+}
+
+function displayCart(cartAr){
+    document.querySelector("#child").textContent="";
+    console.log(cartAr);
+       cartAr.map(function(elem){
+        var pyr=localStorage.getItem("sizeList");
+       var div=document.createElement("div");
+       div.setAttribute("id","cartprod");
+
+       
+       var image=document.createElement("img");
+       image.setAttribute("src",elem.image);
+       image.setAttribute("alt",elem.title);
+       
+       var divp=document.createElement("div");
+       divp.setAttribute("class","clas");
+
+       var h3=document.createElement("h3");
+       h3.textContent=elem.title;
+
+      
+
+       
+
+       var diva=document.createElement("div");
+       diva.setAttribute("id","rsk");
+       
+       var price=document.createElement("p");
+       price.textContent="₹"+ elem.price;
+
+       
+
+        var maindiv = document.createElement("div");
+        maindiv.setAttribute("id", "divmus")
+
+        var quantity=document.createElement("h2");
+       
+         quantity.textContent="";
+
+         var span=document.createElement("span");
+         span.setAttribute("id","spmus")
+         span.textContent="1";
+         span.style.color = "#00b5b7";
+
+       var increase=document.createElement("button");
+       increase.setAttribute("id","btn")
+          increase.textContent="+";
+    
+          increase.onclick=function(){
+            increaseval(span.textContent);
+          };
+          function increaseval(value){
+              var pr=parseInt(value)+1;
+              var va=pr*(elem.price);
+              span.textContent=pr;
+              price.textContent=va;
+              var a= document.getElementById("pr").textContent;
+             var last=parseInt(a)+parseInt(elem.price);
+             document.getElementById("pr").textContent=last;
+             document.getElementById("bb").textContent=last;
+         document.getElementById("mere").textContent=last;
+
+          }
+         
+          var decrease=document.createElement("button");
+          decrease.setAttribute("id","btn")
+          decrease.textContent="-";
+          decrease.onclick=function(){
+            decreaseval(span.textContent);
+          };
+          function decreaseval(value){
+            if(value==1){
+                return ;
+             }else{
+            var pr=parseInt(value)-1;
+            var va=pr*elem.price
+            span.textContent=pr;
+              price.textContent=va;
+          var a= document.getElementById("pr").textContent;
+       var last=parseInt(a)-parseInt(elem.price);
+       
+        document.getElementById("pr").textContent=last;
+        document.getElementById("bb").textContent=last;
+    document.getElementById("mere").textContent=last;
+
+        }
+        
+            } 
+          
+
+          var tree=document.createElement("div");
+         tree.setAttribute("id","pers");
+
+         var del=document.createElement("button");
+         del.setAttribute("id","delbtn")
+         var imge=document.createElement("img")
+         imge.setAttribute("id","imge")
+          imge.src="https://cdn-icons-png.flaticon.com/128/4387/4387288.png";
+          del.appendChild(imge)
+        
+         del.addEventListener("click",function(){
+           delrow(elem);
+      });
+      
+        quantity.append(span);
+        maindiv.append(increase,quantity,decrease)
+        diva.append(price,maindiv);
+        divp.append(h3);
+        tree.append(del);
+       
+        div.append(image,divp,diva,tree);
+        document.querySelector("#child").append(div);
+
+    
+});
+
+}
+
+// console.log(cart);
+function delrow(elem){
+      // console.log(typeof cart);
+       cartAr.splice(elem,1);
+        // console.log(p);
+        localStorage.setItem("cartProducts",JSON.stringify(cartAr))
+        displayCart(cartAr);
+        caltotal(cartAr);
+        updateCount(cartAr);
+    }
+
+function updateCount(cartAr){
+    document.getElementById("per").textContent=cartAr.length;
+    localStorage.setItem("cartper",cartAr.length);
+}
+
+
+function caltotal(){
+    var carval=0;
+    for(var i=0;i<cartAr.length;i++){
+        carval+=parseInt(cartAr[i].price);
+         console.log(carval)
+    }
+    document.getElementById("pr").textContent=carval;
+    document.getElementById("bb").textContent=carval;
+    document.getElementById("permus").textContent=cartAr.length;
+    document.getElementById("mere").textContent=carval;
+  ;
+   }
+   document.querySelector("#poi").addEventListener("click", checkpu);
+   function checkpu(){
+    // event.preventDefault();
+        var ch = document.getElementById("promo").value;
+        console.log(ch);
+        if(ch =="web11"){
+            var temp = document.createElement("p");
+            temp.setAttribute("class","krp");
+             temp = "Hurray!... You got 30% off";
+            console.log(temp);
+            document.getElementById("Offer").append(temp);
+            var t = parseInt(document.getElementById("pr").textContent);
+            var change = (t*3)/10;
+            document.getElementById("permus").textContent=cartAr.length;
+            document.getElementById("mere").textContent = t - change;
+            document.getElementById("bb").textContent = t - change;
+            
+        }
+    }
+   
+
+</script>
+
