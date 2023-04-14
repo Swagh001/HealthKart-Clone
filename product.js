@@ -146,9 +146,12 @@ getdata(url);
         let cartBtn= document.createElement("button");
         cartBtn.id="cart-button";
         cartBtn.textContent="Add to Cart";
+        
         cartBtn.addEventListener("click", () => {
-          addToCart(products);
-          cartBtn.textContent="Added to Cart"
+          addToCart(products)
+            cartBtn.textContent="Added to Cart";
+           
+            console.log(count);
         });
         // cartBtn.append(icon);
         let icon=document.createElement("img");
@@ -171,11 +174,17 @@ getdata(url);
 
   
   let cartArray=JSON.parse(localStorage.getItem("cartItem")) || [];
-
+  // let count=0;
+  let count=0;
   function addToCart(products){
+    count+=1;
+    if(count>1){
+      alert("Already added to Cart");
+      return;
+    }
     cartArray.push(products);
     localStorage.setItem("cartItem",JSON.stringify(cartArray));
-
+    // count+=1;
   }
 
   function proDesc(products){

@@ -1183,7 +1183,7 @@ footer .content .link-boxes .input-box {
 </body>
 </html>
 <script>
-var cartAr=JSON.parse(localStorage.getItem("cartProducts")) || [];
+var cartAr=JSON.parse(localStorage.getItem("cartItem")) || [];
 
  
 if(cartAr===0){
@@ -1254,7 +1254,7 @@ function displayCart(cartAr){
               var pr=parseInt(value)+1;
               var va=pr*(elem.price);
               span.textContent=pr;
-              price.textContent="$"+va;
+              price.textContent="₹"+va;
               var a= document.getElementById("pr").textContent;
              var last=parseInt(a)+parseInt(elem.price);
              document.getElementById("pr").textContent=last;
@@ -1274,7 +1274,7 @@ function displayCart(cartAr){
             var pr=parseInt(value)-1;
             var va=pr*elem.price
             span.textContent=pr;
-              price.textContent="$"+va;
+              price.textContent="₹"+va;
           var a= document.getElementById("pr").textContent;
        var last=parseInt(a)-parseInt(elem.price);
         document.getElementById("pr").textContent=last;
@@ -1315,7 +1315,7 @@ function delrow(elem){
       // console.log(typeof cart);
        cartAr.splice(elem,1);
         // console.log(p);
-        localStorage.setItem("cartProducts",JSON.stringify(cartAr))
+        localStorage.setItem("cartItem",JSON.stringify(cartAr))
         displayCart(cartAr);
         caltotal(cartAr);
         updateCount(cartAr);
