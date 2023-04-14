@@ -215,8 +215,13 @@ function display() {
 display();
 
 let cartArray = JSON.parse(localStorage.getItem("cartItem")) || [];
-
+let count=0;
 function addToCart(products) {
+  count+=1;
+  if(count>1){
+    alert("Already added to Cart");
+    return;
+  }
   cartArray.push(products);
   localStorage.setItem("cartItem", JSON.stringify(cartArray));
 
@@ -225,6 +230,6 @@ function addToCart(products) {
 function quickbuy(products) {
   cartArray.push(products);
   localStorage.setItem("cartItem", JSON.stringify(cartArray));
-  window.location.href = "cartpage.html";
+  window.location.href = "cart.html";
 
 }
