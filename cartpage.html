@@ -1151,8 +1151,8 @@ footer .content .link-boxes .input-box {
 
           <div id="cardval">
             <div id="mus">
-                <p>Total MRP:- </p>
-                <span id="pr">₹ </span>
+                <p>Total MRP:-</p>
+                <span id="pr"></span>
             </div>
             
             <div id="gt">
@@ -1183,7 +1183,7 @@ footer .content .link-boxes .input-box {
 </body>
 </html>
 <script>
-var cartAr=JSON.parse(localStorage.getItem("cartProducts")) || [];
+var cartAr=JSON.parse(localStorage.getItem("cartItem")) || [];
 
  
 if(cartAr===0){
@@ -1215,13 +1215,9 @@ function displayCart(cartAr){
        divp.setAttribute("class","clas");
 
        var h3=document.createElement("h3");
-       h3.textContent=elem.name;
+       h3.textContent=elem.title;
 
-       var p=document.createElement("p");
-       p.textContent="Brand:"+elem.brand;
-
-       var pa=document.createElement("p");
-       pa.textContent="Width:"+pyr;
+      
 
        
 
@@ -1229,13 +1225,13 @@ function displayCart(cartAr){
        diva.setAttribute("id","rsk");
        
        var price=document.createElement("p");
-       price.textContent="₹"+elem.price;
+       price.textContent=elem.price;
 
        var quantity=document.createElement("h2");
          quantity.textContent="";
 
          var span=document.createElement("span");
-         span.textContent=" "+"1";
+         span.textContent="1";
          span.style.color = "#00b5b7";
 
         
@@ -1243,10 +1239,7 @@ function displayCart(cartAr){
        var increase=document.createElement("button");
        increase.setAttribute("id","btn")
           increase.textContent="+";
-         
-         increase.style.color = 'white';
-          increase.style.backgroundcolor = 'white';
-
+    
           increase.onclick=function(){
             increaseval(span.textContent);
           };
@@ -1254,10 +1247,12 @@ function displayCart(cartAr){
               var pr=parseInt(value)+1;
               var va=pr*(elem.price);
               span.textContent=pr;
-              price.textContent="$"+va;
+              price.textContent=va;
               var a= document.getElementById("pr").textContent;
              var last=parseInt(a)+parseInt(elem.price);
              document.getElementById("pr").textContent=last;
+             document.getElementById("bb").textContent=last;
+         document.getElementById("mere").textContent=last;
 
           }
          
@@ -1274,10 +1269,13 @@ function displayCart(cartAr){
             var pr=parseInt(value)-1;
             var va=pr*elem.price
             span.textContent=pr;
-              price.textContent="$"+va;
+              price.textContent=va;
           var a= document.getElementById("pr").textContent;
        var last=parseInt(a)-parseInt(elem.price);
         document.getElementById("pr").textContent=last;
+        document.getElementById("bb").textContent=last;
+    document.getElementById("mere").textContent=last;
+
         }
         
             } 
@@ -1299,7 +1297,7 @@ function displayCart(cartAr){
       
         quantity.append(span);
         diva.append(price,increase,quantity,decrease);
-        divp.append(h3,p,pa);
+        divp.append(h3);
         tree.append(del);
        
         div.append(image,divp,diva,tree);
@@ -1331,11 +1329,12 @@ function caltotal(){
     var carval=0;
     for(var i=0;i<cartAr.length;i++){
         carval+=parseInt(cartAr[i].price);
-         
+         console.log(carval)
     }
-    document.getElementById("pr").textContent="₹"+carval;
-    document.getElementById("bb").textContent="₹"+carval;
-    document.getElementById("mere").textContent="₹"+carval;
+    document.getElementById("pr").textContent=carval;
+    document.getElementById("bb").textContent=carval;
+    
+    document.getElementById("mere").textContent=carval;
   ;
    }
    document.querySelector("#poi").addEventListener("click", checkpu);
@@ -1352,6 +1351,7 @@ function caltotal(){
             var t = parseInt(document.getElementById("pr").textContent);
             var change = (t*3)/10;
             document.getElementById("pr").textContent = t - change;
+            
         }
     }
    
