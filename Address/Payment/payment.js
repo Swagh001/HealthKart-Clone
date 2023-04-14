@@ -158,13 +158,13 @@ footerbar.innerHTML = footer_bar();
         let btn2=document.getElementById("UPIbtn2");
         btn2.addEventListener("click",function(){
             let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@okicici";
+            document.getElementById("inputUPI").value=val+"@okhdfc";
         });
 
         let btn3=document.getElementById("UPIbtn3");
         btn3.addEventListener("click",function(){
             let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@okhdfc";
+            document.getElementById("inputUPI").value=val+"@okicici";
         });
 
         let btn4=document.getElementById("UPIbtn4");
@@ -179,7 +179,7 @@ footerbar.innerHTML = footer_bar();
             Securely.style.backgroundColor = "rgb(10, 177, 243)";
         });       
         Securely.addEventListener("click",function(){
-            window.location.href="https://www.youtube.com/";
+            location.href="Final_Page.html";
         })
     })
     
@@ -187,7 +187,7 @@ footerbar.innerHTML = footer_bar();
 
     let SecurelyDcard=document.getElementById("SecurelyDcard");
     SecurelyDcard.disabled=true;
-
+ 
     let count=0;
     document.getElementById("pay-Dcard").addEventListener("click",function(){
         upi.style.display = "none";
@@ -211,31 +211,31 @@ footerbar.innerHTML = footer_bar();
         upi.style.display = "block";
         simpl.style.display = "none";
 
-        let btn1=document.getElementById("UPIbtn1");
-        btn1.addEventListener("click",function(){
-            // btn1.setAttribute("id","btnupi");
-            // console.log("ky ")
-            let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@oksbi";
-        });
+        // let btn1=document.getElementById("UPIbtn1");
+        // btn1.addEventListener("click",function(){
+        //     // btn1.setAttribute("id","btnupi");
+        //     // console.log("ky ")
+        //     let val=document.getElementById("inputUPI").value;
+        //     document.getElementById("inputUPI").value=val+"@oksbi";
+        // });
 
-        let btn2=document.getElementById("UPIbtn2");
-        btn2.addEventListener("click",function(){
-            let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@okicici";
-        });
+        // let btn2=document.getElementById("UPIbtn2");
+        // btn2.addEventListener("click",function(){
+        //     let val=document.getElementById("inputUPI").value;
+        //     document.getElementById("inputUPI").value=val+"@okicici";
+        // });
 
-        let btn3=document.getElementById("UPIbtn3");
-        btn3.addEventListener("click",function(){
-            let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@okhdfc";
-        });
+        // let btn3=document.getElementById("UPIbtn3");
+        // btn3.addEventListener("click",function(){
+        //     let val=document.getElementById("inputUPI").value;
+        //     document.getElementById("inputUPI").value=val+"@okhdfc";
+        // });
 
-        let btn4=document.getElementById("UPIbtn4");
-        btn4.addEventListener("click",function(){
-            let val=document.getElementById("inputUPI").value;
-            document.getElementById("inputUPI").value=val+"@okaxis";
-        });
+        // let btn4=document.getElementById("UPIbtn4");
+        // btn4.addEventListener("click",function(){
+        //     let val=document.getElementById("inputUPI").value;
+        //     document.getElementById("inputUPI").value=val+"@okaxis";
+        // });
 
         document.getElementById("verify").addEventListener("click",function(){
             Securely.disabled = false;
@@ -243,7 +243,7 @@ footerbar.innerHTML = footer_bar();
             Securely.style.backgroundColor = "rgb(10, 177, 243)";
         });       
         Securely.addEventListener("click",function(){
-            window.location.href="https://www.youtube.com/";
+            window.location.href="Final_Page.html";
         })
     })
     
@@ -266,7 +266,7 @@ footerbar.innerHTML = footer_bar();
                 console.log("golmal");
         
                 SecurelyDcard.addEventListener("click",function(){
-                    window.location.href="https://www.youtube.com/";
+                    window.location.href="Final_Page.html";
                 })
             }
             else{
@@ -293,7 +293,7 @@ footerbar.innerHTML = footer_bar();
         SecurelySimpl.style.backgroundColor = "rgb(10, 177, 243)";
 
         SecurelySimpl.addEventListener("click",function(){
-            window.location.href="https://www.youtube.com/";
+            window.location.href="Final_Page.html";
         })
     })
 
@@ -357,7 +357,7 @@ footerbar.innerHTML = footer_bar();
             Confirm_Order.style.backgroundColor = "rgb(10, 177, 243)";
 
             Confirm_Order.addEventListener("click",function(){
-                window.location.href="https://www.youtube.com/"
+                window.location.href="Final_Page.html"
             })
         })
     })
