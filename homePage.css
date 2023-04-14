@@ -333,3 +333,10 @@ li:hover{
 ul{
     list-style-type: none;
 }
+#btn-back-to-top {
+    position: fixed;
+    bottom: 48px;
+    right: 20px;
+    display: inline-block;
+    border-radius: 17px;
+  }
