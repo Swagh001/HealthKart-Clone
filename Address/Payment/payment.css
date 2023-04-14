@@ -147,21 +147,56 @@ body{
     margin-bottom: 10px;
 }
 #btndiv input{
-    border: 1px solid grey;
+    border: 1px solid rgb(187, 185, 185);
     width: 100px;
     border-radius: 5px;
     padding: 10px;
     margin-left: 5px;
     background-color: white;
+    color: #767677;
 }
 
 #btndiv input:hover{
     cursor: pointer;
 }
 
-#btnupi:active{
+#btndiv input:active{
     border: 1px solid;
     border-color: orange;
+    /* color: rgb(10, 177, 243); */
+}
+
+#Securely{
+    width: 100%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
+}
+
+
+.Dcardinput{
+    margin: 10px 0px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#SecurelyDcard{
+    width: 100%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
 }
 
 

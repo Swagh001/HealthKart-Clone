@@ -42,10 +42,10 @@
                         <input type="button" class="pay_btn" id="pay-upi"value="Pay Using UPI">
                         <!-- <button class="pay_btn" id="pay-upi">Pay Using UPI</button> -->
 
-                        <input type="button" class="pay_btn" id="pay-card"value="Debit Card">
+                        <input type="button" class="pay_btn" id="pay-Dcard"value="Debit Card">
                         <!-- <button class="pay_btn" id="pay-card">Debit Card</button> -->
 
-                        <input type="button" class="pay_btn" id="pay-card"value="Credit Card">
+                        <input type="button" class="pay_btn" id="pay-Ccard"value="Credit Card">
                         <!-- <button class="pay_btn" id="pay-card">Credit Card</button> -->
 
                         <input type="button" class="pay_btn" id="pay-simpl"value="Simpl">
@@ -64,7 +64,40 @@
                         <!-- <button class="pay_btn" id="pay-cod">Cash On Deleivery</button> -->
                     </div>
                     <div id="btn-data">
-                        
+                        <!-- 1 -->
+                        <div id="upi">
+                            <h3>Add a new UPI</h3>
+                            <p id="p1">You need to have a registered UPI ID</p>
+                            <div id="divpay">
+                                <input type="text" name="" id="inputUPI" class="inputField" placeholder="Enter UPI ID">
+                                <button id="verify">verify</button>
+                            </div>
+                            <p>Securely saved for faster payments</p>
+                            <div id="btndiv">
+                                <input id="UPIbtn1" type="button" value="@oksbi">
+                                <input id="UPIbtn2" type="button" value="@okhdfc">
+                                <input id="UPIbtn3" type="button" value="@okicici">
+                                <input id="UPIbtn4" type="button" value="@okaxis">
+                            </div>
+
+                            <button id="Securely">Securely pay</button>
+                        </div>
+
+                        <!-- 2 -->
+                        <div id="Dcard">
+                            <h3>Add a new card</h3>
+                            <!-- <form action="submit"> -->
+                                <input class="Dcardinput" id="Dcardcardname" type="text" name="CardName" placeholder="Please Enter your name on  card" ><br>
+                                <input class="Dcardinput" id="Dcardcardno" type="text" name="CardName" placeholder="4352xxxxxxxx2235">
+                                <div style="display: flex;">
+                                    <input class="Dcardinput" id="DcardMY" type="month" name="year" placeholder="Expiry MM and YY">
+                                    <input class="Dcardinput" id="Dcardcardcvv" type="number" name="number" placeholder="CVV">
+                                </div>
+                                <p style="font-size: 10px; color: grey;">Save your card as per <span style="color: blue;">the RBI guidelines.</span> You can delete it later if you change your mind.</p>
+                                <button id="SecurelyDcard">Securely pay</button>
+                            <!-- </form> -->
+                            
+                        </div>
                     </div>
                 </div>
             </div>
