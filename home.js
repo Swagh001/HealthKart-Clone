@@ -8,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
+    document.body.scrollTop > 30 ||
+    document.documentElement.scrollTop > 30
   ) {
     mybutton.style.display = "block";
   } else {
@@ -23,3 +23,13 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Add to cart implementation
+
+let count = 0;
+let counter = document.getElementById('counter')
+document.getElementsByClassName('add-animation').addEventListener('click',event =>{
+    let cnt = count++;
+    console.log(cnt)
+    
+})

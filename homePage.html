@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <script defer src="./home.js"></script>
+      <script defer src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -34,9 +35,12 @@
             <div class="col-3">
                 <button type="button" class="btn" id="btn121">Login</button>
                 <!-- Cart Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" id="cartIcon">
+                <div class="counter-container">
+                  <span id="counter">0</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" id="cartIcon">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                   </svg>
+                </div>
             </div>
         </div>
         <hr>
@@ -159,7 +163,7 @@
                 </div>
                 <button id="addCart121">
                   <img src="https://static1.hkrtcdn.com/hknext/static/media/common/cartNew.svg" alt="cart" id="cartimg121">
-                  <p id="cartPara1221">Add to Cart</p>
+                  <p id="cartPara1221" class="add-animation">Add to Cart</p>
                 </button>
               </div>
             </div>

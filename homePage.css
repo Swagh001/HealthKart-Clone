@@ -48,9 +48,9 @@ input{
 }
 #cartIcon{
     width: 26px;
-    margin-left: 61px;
+    margin-left: 13rem;
     height: 40px;
-    margin-top: 26px;
+    margin-top: -41px;
     position: absolute;
     cursor: pointer;
 }
@@ -340,3 +340,22 @@ ul{
     display: inline-block;
     border-radius: 17px;
   }
+
+.counter-container span{
+    user-select: none;
+    position: absolute;
+    background: #ff8914;
+    width: 1.3rem;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-top: -43px;
+    margin-left: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top: 0.2rem;
+    right: 0.3rem; */
+    color: #fff;
+}
