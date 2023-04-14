@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- <p>welcome chhote</p> -->
+<!-- navbar --------------------------------------------------------------------------------------------------->
+    <div id="Navbar-AddressPage">
+    </div>
+    
+<!--Payment body  -->
+
+
+    <div id="container-Main">
+        <div id="container-1">
+            <div id="container-11">
+                <div style="display: flex; justify-content: space-between;">
+                    <div><h3>Delivery Address</h3></div>
+                    <div><h3>Change</h3></div>
+                </div>
+                <div id="address-data" style="display: flex;">
+                    <img src="https://static1.hkrtcdn.com/hknext/static/media/payment/location-address.svg" alt="">
+                </div>
+            </div>
+            
+            
+        
+            <div id="container-12">
+                <div>
+                    <h3>Payment Method</h3>
+                    <p id="para-12" >As per new RBI guidelines, some of your previously saved cards may no longer be displayed.
+                        ...<span id="learnmore" style="color: skyblue; font-weight: bold; ">Learn More</span></p>
+                        <!-- Please enter your card details again and ensure you give your consent to save it for future payments. -->   
+                </div>
+                <div id="payment-options">
+                    <div id="pay">
+                        <input type="button" class="pay_btn" id="pay-upi"value="Pay Using UPI">
+                        <!-- <button class="pay_btn" id="pay-upi">Pay Using UPI</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-Dcard"value="Debit Card">
+                        <!-- <button class="pay_btn" id="pay-card">Debit Card</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-Ccard"value="Credit Card">
+                        <!-- <button class="pay_btn" id="pay-card">Credit Card</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-simpl"value="Simpl">
+                        <!-- <button class="pay_btn" id="pay-simpl">Simpl</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-wallet"value="Wallets">
+                        <!-- <button class="pay_btn" id="pay-wallet">Wallets</button> -->
+                        
+                        <input type="button" class="pay_btn" id="pay-int-bank"value="Internet Banking">
+                        <!-- <button class="pay_btn" id="pay-int-bank">Internet Banking</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-emi"value="EMI or Pay Later">
+                        <!-- <button class="pay_btn" id="pay-emi">EMI or Pay Later</button> -->
+
+                        <input type="button" class="pay_btn" id="pay-cod"value="Cash On Deleivery">
+                        <!-- <button class="pay_btn" id="pay-cod">Cash On Deleivery</button> -->
+                    </div>
+                    <div id="btn-data">
+                        <!-- 1 -->
+                        <div id="upi">
+                            <h3>Add a new UPI</h3>
+                            <p id="p1">You need to have a registered UPI ID</p>
+                            <div id="divpay">
+                                <input type="text" name="" id="inputUPI" class="inputField" placeholder="Enter UPI ID">
+                                <button id="verify">verify</button>
+                            </div>
+                            <p>Securely saved for faster payments</p>
+                            <div id="btndiv">
+                                <input id="UPIbtn1" type="button" value="@oksbi">
+                                <input id="UPIbtn2" type="button" value="@okhdfc">
+                                <input id="UPIbtn3" type="button" value="@okicici">
+                                <input id="UPIbtn4" type="button" value="@okaxis">
+                            </div>
+
+                            <button id="Securely">Securely pay</button>
+                        </div>
+
+                        <!-- 2 -->
+                        <div id="Dcard">
+                            <h3>Add a new card</h3>
+                            <!-- <form action="submit"> -->
+                                <input class="Dcardinput" id="Dcardcardname" type="text" name="CardName" placeholder="Please Enter your name on  card" ><br>
+                                <input class="Dcardinput" id="Dcardcardno" type="text" name="CardName" placeholder="4352xxxxxxxx2235">
+                                <div style="display: flex;">
+                                    <input class="Dcardinput" id="DcardMY" type="month" name="year" placeholder="Expiry MM and YY">
+                                    <input class="Dcardinput" id="Dcardcardcvv" type="number" name="number" placeholder="CVV">
+                                </div>
+                                <p style="font-size: 10px; color: grey;">Save your card as per <span style="color: blue;">the RBI guidelines.</span> You can delete it later if you change your mind.</p>
+                                <button id="SecurelyDcard">Securely pay</button>
+                            <!-- </form> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-2" style="row-gap: 0px;">
+            <h3>Order Summary &nbsp; <span id="Order_count"></span></h3>
+            <!-- ₹ -->
+            <div class="order">
+                <div><p>Total MRP</div>
+                <div><p >₹<span id="mrp"> 5000</span></p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Total Discounts <img src="https://static1.hkrtcdn.com/hknext/static/media/common/pop-icon.svg" alt="pop"></p></div>
+                <div><p id="discounts" style="color: green; font-weight: bold;">0</p></div>
+            </div>
+
+            <div class="order">
+                <div><p>Shipping Charges</div>
+                <div><p style="color: green; font-weight: bold">FREE</p></div>
+            </div>
+            <hr>
+
+            <div class="order">
+                <div><h3>Payable Amount </div>
+                <div><h3 id="final-payment"></h3></div>
+            </div>
+        
+            <p style="font-size: 12px; color: green;">You will Save ₹<span>1,500</span> & Earn ₹98 HK Cash on this order</p>
+        </div>
+    </div>
+<!--footer-------------------------------------------------------------------------------------  -->
+    <footer id="footer-bar"></footer>        
+    
+    <script src="payment.js" type="module"></script>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/6c991e2d26.js" crossorigin="anonymous"></script>

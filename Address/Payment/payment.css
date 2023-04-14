@@ -1,0 +1,236 @@
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:#494953;
+    width: 100%;
+}
+
+/*navbar-----------------------------------------------------`------------ */
+#navbar-container{
+    display: flex;
+    background-color: white;
+    /* border: solid; */
+    margin: -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#navbar-container-1{
+    width: 30%;
+    /* border: solid; */
+    justify-content: center;
+    padding-left: 100px;
+}
+
+#navbar-container-1 img{
+    height: 80px;
+    /* border: solid; */
+}
+.header-process-steps{
+    display: flex;
+    margin-left: 10px;
+    padding: 10px;
+    column-gap: 80px;
+    /* border: solid; */
+}
+/* body----------------------------------------------------------------------------------------------- */
+
+#container-Main{
+    display: flex;
+    /* border: 1px solid; */
+    margin: 30px 0px 50px 80px;
+    column-gap: 50px;
+    
+}
+
+#container-1{
+    width: 60%;
+    /* border: 1px solid; */
+    /* border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white; */
+}
+
+#container-11{
+    /* display: flex; */
+    background-color: white;
+    padding: 10px 20px 5px 20px;
+    border-radius: 10px;
+}
+#container-12{
+    /* display: flex; */
+    margin-top: 20px;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+}
+
+#para-12{
+    border: 1px solid skyblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#pay{
+    display: grid;;
+    grid-template-columns: (1,1fr);
+    width: 20%;
+    row-gap: 2px;
+}
+
+.pay_btn{
+    height: 50px;
+    width: 170px;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+    color: gray;
+}
+.pay_btn:hover{
+    color: black;
+}
+.pay_btn:focus{
+    background-color: white;
+    border-left: 4px solid #00a89d;
+    color: black;
+}
+.pay_btn:active{
+    background-color: white;
+    border-left: 4px solid #00a89d;
+    color: black;
+}
+
+/* allbtns_payment */
+#payment-options{
+    display: flex;
+    /* border: solid; */
+}
+#pay{
+    width: 30%;
+    /* border: solid; */
+}
+#btn-data{
+    /* border: solid; */
+
+}
+
+#p1{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.inputField{
+    height: 40px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(216, 214, 214);
+}
+#divpay{
+    display: flex;
+    column-gap: 15px;
+}
+#divpay .inputField{
+    /* border: solid; */
+    width:100% ;
+}
+#divpay button{
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#btndiv{
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+#btndiv input{
+    border: 1px solid rgb(187, 185, 185);
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: white;
+    color: #767677;
+}
+
+#btndiv input:hover{
+    cursor: pointer;
+}
+
+#btndiv input:active{
+    border: 1px solid;
+    border-color: orange;
+    /* color: rgb(10, 177, 243); */
+}
+
+#Securely{
+    width: 100%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
+}
+
+
+.Dcardinput{
+    margin: 10px 0px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#SecurelyDcard{
+    width: 100%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
+}
+
+
+
+
+
+#container-2{
+    /* border: 1px solid; */
+    padding: 10px 30px 40px 20px;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    height: 20%;
+
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/* Footer-------------------------------------------------------------------------------------------- */
+#address_footer{
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 0px 5px 100px;
+}
+#logo-div{
+    display: flex;
+    column-gap: 10px;
+}
