@@ -259,5 +259,53 @@ getdata(url);
     getdata(urlf4);
   }
 
+  //Debouncingf-search bar
+  
+//   async function main(){
+//     let data= await getData();
 
-  // display(productArray);
+//     if(!data){
+//         return false;
+//     }
+
+//     displayData(data);
+// }
+// let timerId;
+// function debounce(main, delay){
+//   console.log("search-bar inp")
+//     if(timerId){
+//         clearTimeout(timerId)
+//     }
+//     timerId= setTimeout(function (){
+//         main();
+//     },delay)
+// }
+
+// async function getData(){
+//   try{
+//    let searchParam=document.getElementById("search-inp").value;
+//    let res= await fetch(`http://localhost:3000/products?q=${searchParam}`);
+//    let data= await res.json();
+
+//    console.log(data);
+//    return data;
+//   }catch(error){
+//    console.log(error);
+//   }
+// }
+
+// function displayData(data){
+//   let movie_container=document.getElementById("searchbox");
+//   movie_container.innerHTML="";
+
+//  data.map((movies) =>{
+//   let p=document.createElement("p");
+//   p.textContent=movies.title;
+//   p.addEventListener("click", function() {
+//       display(movies);
+//   })
+
+//   movie_container.append(p);
+//  })
+// }
+
