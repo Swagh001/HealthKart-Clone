@@ -199,6 +199,29 @@ body{
     border-radius: 10px;
 }
 
+#SecurelySimpl{
+    width: 100%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
+}
+
+#Confirm_Order{
+    margin-left: 10px;
+    width: 30%;
+    background-color: rgb(192, 191, 191);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size:larger;
+    border-radius: 10px;
+}
+
 
 
 
