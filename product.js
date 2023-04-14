@@ -201,5 +201,54 @@ getdata(url);
     getdata(urls);
   }
 
+  function filter1(){
+    let urlf1="http://localhost:3000/products?discount_gte=10&discount_lte=15";
+    getdata(urlf1);
+  }
+  function filter2(){
+    let urlf2="http://localhost:3000/products?discount_gte=15&discount_lte=20";
+    getdata(urlf2);
+  }
+  function filter3(){
+    let urlf3="http://localhost:3000/products?discount_gte=20&discount_lte=25";
+    getdata(urlf3);
+  }
+  function filter4(){
+    let urlf4="http://localhost:3000/products?price_gte=1&price_lte=1500";
+    getdata(urlf4);
+  }
+  function filter5(){
+    let urlf1="http://localhost:3000/products?price_gte=1&price_lte=1499";
+    getdata(urlf1);
+  }
+  function filter6(){
+    let urlf2="http://localhost:3000/products?price_gte=1500&price_lte=4000";
+    getdata(urlf2);
+  }
+  function filter7(){
+    let urlf3="http://localhost:3000/products?price_gte=4000&price_lte=8000";
+    getdata(urlf3);
+  }
+  function filter8(){
+    let urlf4="http://localhost:3000/products?price_gte=8000&price_lte=15000";
+    getdata(urlf4);
+  }
+  function filter9(){
+    let urlf4="http://localhost:3000/products?rating_gte=4&rating_lte=5";
+    getdata(urlf4);
+  }
+  function filter10(){
+    let urlf4="http://localhost:3000/products?rating_gte=3&rating_lte=3.9";
+    getdata(urlf4);
+  }
+  function filter11(){
+    let urlf4="http://localhost:3000/products?rating_gte=2&rating_lte=2.9";
+    getdata(urlf4);
+  }
+  function filter12(){
+    let urlf4="http://localhost:3000/products?rating_gte=1&rating_lte=1.9";
+    getdata(urlf4);
+  }
+
 
   // display(productArray);
