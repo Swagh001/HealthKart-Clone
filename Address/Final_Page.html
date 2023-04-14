@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Congratulations on Your Purchase!</title>
+	<style>
+		body{
+			background-color: whitesmoke;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+			text-align: center;
+		}
+		h1{
+			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p{
+			color: #666;
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: 40px;
+		}
+		button{
+			background-color: #ff6961;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: #ff4d4d;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Congratulations on Your Purchase!</h1>
+		<p>We hope you enjoy your new product, and thank you</p>
+		<button id="thankYOU">thank you</button>
+	</div>
+</body>
+</html>
+<script>
+    document.getElementById("thankYOU").addEventListener("click",function(){
+        window.location.href="https://www.youtube.com/";
+    })
+</script>
