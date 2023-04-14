@@ -13,12 +13,12 @@ function Signup(e) {
 
     let mobile = document.getElementById("mobile").value;
     let email = document.getElementById("email").value;
-    let password = document.getElementById("pass").value;
+    let name = document.getElementById("pass").value;
 
     let obj = {
         mobile: mobile,
         email: email,
-        password: password
+        name: name
 
     };
 
@@ -57,6 +57,7 @@ function login(Event) {
         let existingUser = false
         userArray.forEach(element => {
             if (element.mobile == x){
+                localStorage.setItem("loginName",element.name);
                 existingUser = true
             }
          });

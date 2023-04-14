@@ -5,6 +5,132 @@
         font-weight: 500;
     
 }
+
+#main-content {
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+#main-content2 {
+    width: 85%;
+    /* height: 500px; */
+    margin: auto;
+    display: flex;
+    /* border: 1px solid green; */
+}
+
+#left2below {
+    margin: 10px;
+    width: 407px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+}
+
+#left2 {
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+#left {
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 10px;
+}
+
+#main-small-image {
+    width: 22%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+
+#small-image2 {
+    width: 90%;
+    height: 130px;
+    /* border: 1px solid black; */
+    margin: 10px;
+
+}
+
+#small-image3 {
+    width: 90%;
+    height: 130px;
+    /* border: 1px solid black; */
+    margin: 10px;
+
+}
+
+#small-image4 {
+    width: 90%;
+    height: 130px;
+    /* border: 1px solid black; */
+    margin: 10px;
+
+}
+
+#main-image {
+    width: 75%;
+    height: 420px;
+    /* border: 1px solid red; */
+    margin: 7px;
+}
+
+#right {
+    width: 50%;
+    margin: 10px;
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+
+#right2 {
+    width: 50%;
+    margin: 10px;
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+#inner2-main{
+    /* border: 1px solid purple; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    background-color: #f7f7f7;
+}
+#inner2{
+    /* border: 1px solid yellow; */
+    width: 30%;
+
+}
+#inner2 h3{
+    margin-left: 20px;
+    font-weight: 600;
+}
+#main-content3{
+    width: 85%;
+    /* height: 500px; */
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: flex;
+}
+.det_left{
+    /* border: 1px solid blue; */
+    width: 50%;
+    margin: 5px;
+
+}
+.det_right{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 5px;
+}
+#poster{
+    width: 100%;
+    border-radius: 8px;
+}
 #right h3{
     margin-top: -10px;
 }
@@ -412,4 +538,148 @@ text-align: left;
 #quick-button:hover{
    background-color: #c06c19;
 }
+@media  all and (min-width: 600px) and (max-width: 800px) {
+    #product-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 20px; */
+        /* border: 1px solid red; */
+    }
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-content2{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-content3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   #small-image2{
+    display: none;
+   }
+   #small-image3{
+    display: none;
+   }
+   #small-image4{
+    display: none;
+   }
+   #main-image{
+    width: 90%;
+   }
+   #left{
+    width: 90%;
+   }
+   #para{
+    display: flex;
+    flex-direction: column;
+   }
+   #left2{
+    display: none;
+   }
+    #right{
+        width: 90%;
+    }
+    #right2{
+        width: 90%;
+    }
+    #path{
+        display: none;
+    }
+    #prodiv{
+        display: flex;
 
+}
+#poster{
+    width: 90%;
+}
+.det_left{
+    width: 90%;
+}
+.det_right{
+    width: 90%;
+}
+#main-small-image{
+    display: none;
+}
+#topdiv7{
+    position: sticky;
+}
+}
+
+@media  all and (min-width: 0px) and (max-width: 415px) {
+    #product-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 20px; */
+        /* border: 1px solid red; */
+    }
+    #main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-content2{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-content3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   #small-image2{
+    display: none;
+   }
+   #small-image3{
+    display: none;
+   }
+   #small-image4{
+    display: none;
+   }
+   #main-image{
+    width: 90%;
+   }
+   #left{
+    width: 90%;
+   }
+   #para{
+    display: flex;
+    flex-direction: column;
+   }
+   #left2{
+    display: none;
+   }
+    #right{
+        width: 90%;
+    }
+    #right2{
+        width: 90%;
+    }
+    #path{
+        display: none;
+    }
+    #prodiv{
+        display: flex;
+
+}
+#poster{
+    width: 90%;
+}
+.det_left{
+    width: 90%;
+}
+.det_right{
+    width: 90%;
+}
+#main-small-image{
+    display: none;
+}
+/* #topdiv7{
+    position: -webkit-sticky;
+} */
+}
