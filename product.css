@@ -49,8 +49,10 @@
     border: 1px solid #77777e;
      border-radius: 4px;
     background: #fff;
-    padding: 2px;
+    padding: 0 10px;
+    padding-top: 5px;
     height: 30px;
+    text-align: center;
 }
 #sorting{
     border: none;
