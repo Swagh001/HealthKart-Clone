@@ -1,4 +1,4 @@
-import nav_bar from "./compo/New_navbar.js";
+import nav_bar from "./New_navbar.js";
 
 let nevbardiv=document.getElementById("Navbar-AddressPage");
 nevbardiv.innerHTML = nav_bar();
@@ -7,7 +7,7 @@ nevbardiv.innerHTML = nav_bar();
 {/* <i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i><i class="fa-sharp fa-solid fa-badge-check" style="color: #1f5122;"></i> */}
 
 let scroll=document.createElement("img");
-scroll.src="../images/nav_2.jpg";
+scroll.src="nav_2.jpg";
 document.getElementById("navbar-container-2").append(scroll);
 
 // let line=document.createElement("p");
@@ -15,7 +15,7 @@ document.getElementById("navbar-container-2").append(scroll);
 // document.getElementById("line").append(line);
 // // document.getElementById("Address-icon").style.backgroundColor="blue";
 
-import footer_bar from "./compo/New_footer.js";
+import footer_bar from "./New_footer.js";
 let footerbar=document.getElementById("footer-bar");
 footerbar.innerHTML = footer_bar();
 
@@ -89,7 +89,8 @@ function submit(){
     AddressArr.push(addressObj);
     
     localStorage.setItem("AddressData",JSON.stringify(AddressArr));
-    location.assign("./Payment/payment.html");
+    // location.assign("payment.html");
+    window.location.href="payment.html"
 }
 
 

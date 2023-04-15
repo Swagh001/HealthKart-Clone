@@ -1,3 +1,17 @@
+import nav_bar from "./navbar.js";
+
+let nevbardiv = document.getElementById("nav-container");
+nevbardiv.innerHTML = nav_bar();
+
+
+
+import footerpart from "./footer.js";
+
+let footerdiv = document.getElementById("footer-container");
+footerdiv.innerHTML = footerpart();
+
+
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 

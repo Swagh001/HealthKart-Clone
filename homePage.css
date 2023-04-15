@@ -4,11 +4,14 @@
     box-sizing: border-box;
     font-family: Montserrat,sans-serif;
 }
+/* #nav-container{
+    position: static;
+} */
 #imgStyle121{
     margin-left: 78px;
     width: 15vw;
 }
-input{
+#searchBar121{
     margin-top: 20px;
     border: none;
     border-radius: 8px;
@@ -309,7 +312,7 @@ input{
     margin-top: 4.5rem;
     margin-left: 2rem;
 }
-li{
+.col-2 ul li{
     color: #9ba4a4;
     font-size: 13px;
     line-height: 27px;
