@@ -1,6 +1,6 @@
 let crossbtn = document.getElementById("cross");
 crossbtn.addEventListener("click", () => {
-    window.location.href = "homepage.html"
+    window.location.href = "index.html"
 });
 
 var userData = JSON.parse(localStorage.getItem("users")) || [];
@@ -61,6 +61,7 @@ function login(Event) {
                 existingUser = true
             }
          });
+         console.log(existingUser)
         if(existingUser){
             window.location.href = "otp.html";
         } else{

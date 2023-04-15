@@ -1,4 +1,4 @@
-import nav_bar from "../compo/New_navbar.js";
+import nav_bar from "./New_navbar.js";
 
 let nevbardiv=document.getElementById("Navbar-AddressPage");
 nevbardiv.innerHTML = nav_bar();
@@ -14,10 +14,10 @@ nevbardiv.innerHTML = nav_bar();
 // document.getElementById("line-2").append(line2);
 
 let scroll=document.createElement("img");
-scroll.src="/images/nav_3.jpg";
+scroll.src="nav_3.jpg";
 document.getElementById("navbar-container-2").append(scroll);
 
-import footer_bar from "../compo/New_footer.js";
+import footer_bar from "./New_footer.js";
 let footerbar=document.getElementById("footer-bar");
 footerbar.innerHTML = footer_bar();
 
